@@ -287,3 +287,5 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 /* safety net: the curtain can never stay stuck over the page */
 .curtain.start:not(.out){animation:curFail .01s 3s forwards}
 @keyframes curFail{to{visibility:hidden}}
+
+.room-t h3.long{white-space:normal;font-size:clamp(1.6rem,2.6vw,2.4rem);line-height:1.1}

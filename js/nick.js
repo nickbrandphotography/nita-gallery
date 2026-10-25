@@ -40,7 +40,7 @@ if (fine) {
 const ctx = i => ({ n: bod.length, i, get() {
   const b = bod[this.i];
   return { imgs: [b.img], alt: b.title, html: `
-    <p class="meta">Nick Brand · ${b.series}</p><h3>${esc(b.title)}</h3>
+    <p class="meta">Nick Brand Photography · ${b.series}</p><h3>${esc(b.title)}</h3>
     <p class="meta" style="color:var(--mute)">${b.size} · Edition of 15</p>
     <p>Black-and-white photograph on premium canvas, gallery-framed and wired, ready to hang. Floating frame in black, natural oak or white. Signed Certificate of Authenticity and provenance record.</p>
     <p class="pr">From AUD 1,900 <small class="small">framed</small></p>
