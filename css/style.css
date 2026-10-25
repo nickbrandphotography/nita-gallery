@@ -167,8 +167,8 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .hours div{display:flex;justify-content:space-between;padding:.8rem 0;border-bottom:1px solid #383838;font:300 1.05rem var(--display);letter-spacing:.08em}
 .hours div:last-child{border:0}
 .hours .closed{color:#777}
-.hours .today{color:#fff;font-weight:600}
-.hours .today span:first-child::before{content:"â— ";color:var(--pink)}
+.hours .today:not(.closed){color:#fff;font-weight:600}
+.hours .today span:first-child::after{content:"Today";margin-left:.9rem;padding:.2rem .6rem;border-radius:99px;background:var(--grad);color:#fff;font:600 .58rem var(--display);letter-spacing:.18em;text-transform:uppercase;vertical-align:middle}
 .invite{background:var(--grad);border-radius:6px;padding:clamp(1.5rem,3vw,2.5rem);color:#fff}
 .invite .kicker{color:#fff;opacity:.85}
 .invite h3{font:200 clamp(1.6rem,3vw,2.3rem)/1.15 var(--display);margin-bottom:1rem}
