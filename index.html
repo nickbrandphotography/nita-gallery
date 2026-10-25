@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NITA Gallery — Surry Hills Pop-Up</title>
+<meta name="description" content="NITA Gallery, a pop-up at 68 Campbell Street, Surry Hills. Abstract paintings by Ritushka, fine-art photography by Nick Brand, wearable art by Nikki B, and jewellery.">
+<meta property="og:title" content="NITA Gallery — Surry Hills Pop-Up">
+<meta property="og:description" content="NITA Gallery, a pop-up at 68 Campbell Street, Surry Hills. Abstract paintings by Ritushka, fine-art photography by Nick Brand, wearable art by Nikki B, and jewellery.">
+<meta property="og:image" content="img/brand/invite.jpg">
+<meta name="theme-color" content="#252525">
+<link rel="icon" href="img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Josefin+Sans:wght@100;200;300;400;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-home">
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="img/brand/nita-logo.png" alt="">
+  <div class="loader-bar"><i></i></div>
+</div>
+<div class="curtain start" id="curtain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="wordmark" aria-label="NITA Gallery — home"><img src="img/brand/nita-logo-t.png" alt="NITA Gallery"></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="index.html" aria-current="page">The Gallery</a><a href="ritushka.html">Ritushka</a><a href="nick-brand.html">Nick Brand</a><a href="nikki-b.html">Nikki B</a><a href="jewellery.html">Jewellery</a>
+    <a href="index.html#visit" class="pill">Visit</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <canvas id="blobs" aria-hidden="true"></canvas>
+  <div class="floaters" aria-hidden="true">
+    <img class="fl f1" data-depth="0.9"  src="img/rit/sunrise-over-tokyo.jpg" alt="">
+    <img class="fl f2" data-depth="1.6"  src="img/rit/turquoise-tuesday.jpg" alt="">
+    <img class="fl f3" data-depth="0.6"  src="img/bod/saturn.jpg" alt="">
+    <img class="fl f4" data-depth="1.3"  src="img/nik/laura-model.jpg" alt="">
+    <img class="fl f5" data-depth="1.1"  src="img/rit/without-sweet-harmony.jpg" alt="">
+    <img class="fl f6" data-depth="0.7"  src="img/nik/evie-scarf.jpg" alt="">
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow rv">Surry Hills · Sydney · A pop-up gallery</p>
+    <h1 class="logotype"><img src="img/brand/nita-logo-t.png" alt="NITA Gallery" width="1081" height="366"></h1>
+    <p class="hero-sub rv">Paintings <i>·</i> Photography <i>·</i> Wearable art <i>·</i> Jewellery</p>
+    <div class="hero-cta rv">
+      <a class="btn lg magnetic" href="#visit"><span>Join the soft opening</span></a>
+      <a class="btn ghost magnetic" href="#rooms"><span>Wander in</span></a>
+    </div>
+    <div class="countdown rv" id="countdown" hidden>
+      <div><b id="cd-d">00</b><small>days</small></div>
+      <div><b id="cd-h">00</b><small>hours</small></div>
+      <div><b id="cd-m">00</b><small>mins</small></div>
+      <div><b id="cd-s">00</b><small>secs</small></div>
+      <p>until we open the doors<br><em>Thursday 29 October · 6pm</em></p>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>RITUSHKA <i>✦</i> NICK BRAND PHOTOGRAPHY <i>✦</i> NIKKI B <i>✦</i> JEWELLERY <i>✦</i> 68 CAMPBELL STREET <i>✦</i> SURRY HILLS <i>✦</i> </span>
+    <span>RITUSHKA <i>✦</i> NICK BRAND PHOTOGRAPHY <i>✦</i> NIKKI B <i>✦</i> JEWELLERY <i>✦</i> 68 CAMPBELL STREET <i>✦</i> SURRY HILLS <i>✦</i> </span>
+  </div>
+</div>
+
+<section class="intro" id="rooms">
+  <div class="wrap">
+    <p class="kicker rv">The Gallery</p>
+    <h2 class="statement split" data-split>Two artists. One room. A great deal of colour.</h2>
+    <p class="lede rv">NITA is a pop-up gallery for Ritushka, an abstract painter, and Nick Brand, a photographic artist. It is named for the two of us. Inside you'll also find Nick's fashion label Nikki&nbsp;B, with wearable art in the form of silky scarves and sarongs, and a cabinet of jewellery. Choose a door.</p>
+  </div>
+  <div class="rooms" id="roomsRow">
+    <a class="room" href="ritushka.html" style="--c:#ff7a1a">
+      <img src="img/rit/just-add-champagne.jpg" alt="" loading="lazy">
+      <img class="alt" src="img/rit/sunrise-over-tokyo.jpg" alt="" loading="lazy">
+      <div class="room-t"><small>01 · Paintings</small><h3>Ritushka</h3><p>Large abstract landscapes and seascapes, built in translucent layers.</p><span class="arrow">Enter the room →</span></div>
+    </a>
+    <a class="room mono" href="nick-brand.html" style="--c:#ffffff">
+      <img src="img/bod/where-the-body-ends-and-atmosphere.jpg" alt="" loading="lazy">
+      <div class="room-t"><small>02 · Photography</small><h3>Nick Brand</h3><p>Bodyscapes: the human form, rendered as landscape.</p><span class="arrow">Enter the room →</span></div>
+    </a>
+    <a class="room" href="nikki-b.html" style="--c:#e0338b">
+      <img src="img/brand/nikki-hero.jpg" alt="" loading="lazy">
+      <div class="room-t"><small>03 · Wearable art</small><h3>Nikki&nbsp;B</h3><p>Scarves &amp; sarongs. Wrap your body in art.</p><span class="arrow">Enter the room →</span></div>
+    </a>
+    <a class="room sparkle" href="jewellery.html" style="--c:#ffc21a">
+      <canvas class="spark-c"></canvas>
+      <div class="room-t"><small>04 · Adornment</small><h3>Jewellery</h3><p>A cabinet of pieces to wear and to keep.</p><span class="arrow">Peek in →</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="ribbons" aria-label="A glimpse of what's inside">
+  <div class="rb r1"><div class="rb-t"><a href="ritushka.html" tabindex="-1"><img src="img/rit/approaching-destination.jpg" alt="Approaching Destination" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/saturn.jpg" alt="Saturn" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/aqua-frost-thinking-of-you.jpg" alt="Aqua Frost — Thinking of You" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/the-slow-rise-of-the-back.jpg" alt="The Slow Rise of the Back" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/blue-mountains.jpg" alt="Blue Mountains" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/canyon-carved-into-the-landscape-of.jpg" alt="Canyon Carved Into the Landscape of the Body" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/bush.jpg" alt="Bush" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/sand-dunes-of-the-sole.jpg" alt="Sand Dunes of the Sole" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/deliciousness.jpg" alt="Deliciousness" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/where-the-body-ends-and-atmosphere.jpg" alt="Where the Body Ends and Atmosphere Begins" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/desire.jpg" alt="Desire" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/hidden-seams.jpg" alt="Hidden Seams" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/horizon.jpg" alt="Horizon" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/the-crease-that-deepens-when-no.jpg" alt="The Crease That Deepens When No One Is Watching" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/just-add-champagne.jpg" alt="Just Add Champagne" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/skin-s-secret-conversation.jpg" alt="Skin’s Secret Conversation" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/marshmallow.jpg" alt="Marshmallow" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/paragliding.jpg" alt="Paragliding" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/peony-thinking-of-me.jpg" alt="Peony — Thinking of Me" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/peace-of-white-heaven.jpg" alt="Peace of White Heaven" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/approaching-destination.jpg" alt="Approaching Destination" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/saturn.jpg" alt="Saturn" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/aqua-frost-thinking-of-you.jpg" alt="Aqua Frost — Thinking of You" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/the-slow-rise-of-the-back.jpg" alt="The Slow Rise of the Back" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/blue-mountains.jpg" alt="Blue Mountains" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/canyon-carved-into-the-landscape-of.jpg" alt="Canyon Carved Into the Landscape of the Body" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/bush.jpg" alt="Bush" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/sand-dunes-of-the-sole.jpg" alt="Sand Dunes of the Sole" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/deliciousness.jpg" alt="Deliciousness" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/where-the-body-ends-and-atmosphere.jpg" alt="Where the Body Ends and Atmosphere Begins" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/desire.jpg" alt="Desire" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/hidden-seams.jpg" alt="Hidden Seams" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/horizon.jpg" alt="Horizon" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/the-crease-that-deepens-when-no.jpg" alt="The Crease That Deepens When No One Is Watching" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/just-add-champagne.jpg" alt="Just Add Champagne" loading="lazy"></a><a href="nick-brand.html" tabindex="-1"><img src="img/bod/skin-s-secret-conversation.jpg" alt="Skin’s Secret Conversation" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/marshmallow.jpg" alt="Marshmallow" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/paragliding.jpg" alt="Paragliding" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/peony-thinking-of-me.jpg" alt="Peony — Thinking of Me" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/peace-of-white-heaven.jpg" alt="Peace of White Heaven" loading="lazy"></a></div></div>
+  <div class="rb r2"><div class="rb-t"><a href="nikki-b.html" tabindex="-1"><img src="img/nik/aishwarya-model.jpg" alt="Aishwarya" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/plateau.jpg" alt="Plateau" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/alexandria-model.jpg" alt="Alexandria" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/river-of-my-thoughts.jpg" alt="River of My Thoughts" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/christa-model.jpg" alt="Christa" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/set-sail.jpg" alt="Set Sail" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/evie-model.jpg" alt="Evie" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/shoreham.jpg" alt="Shoreham" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/fiona-model.jpg" alt="Fiona" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/soft-awakening.jpg" alt="Soft Awakening" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/hayley-model.jpg" alt="Hayley" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/softly-loving-dreamscape.jpg" alt="Softly Loving Dreamscape" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/jennifer-model.jpg" alt="Jennifer" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/sunrise-over-tokyo.jpg" alt="Sunrise Over Tokyo" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/joanna-model.jpg" alt="Joanna" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/the-apostles.jpg" alt="The Apostles" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/karen-model.jpg" alt="Karen" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/turbulence.jpg" alt="Turbulence" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/larna-model.jpg" alt="Larna" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/turquoise-tuesday.jpg" alt="Turquoise Tuesday" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/laura-model.jpg" alt="Laura" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/madelin-model.jpg" alt="Madelin" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/aishwarya-model.jpg" alt="Aishwarya" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/plateau.jpg" alt="Plateau" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/alexandria-model.jpg" alt="Alexandria" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/river-of-my-thoughts.jpg" alt="River of My Thoughts" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/christa-model.jpg" alt="Christa" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/set-sail.jpg" alt="Set Sail" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/evie-model.jpg" alt="Evie" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/shoreham.jpg" alt="Shoreham" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/fiona-model.jpg" alt="Fiona" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/soft-awakening.jpg" alt="Soft Awakening" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/hayley-model.jpg" alt="Hayley" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/softly-loving-dreamscape.jpg" alt="Softly Loving Dreamscape" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/jennifer-model.jpg" alt="Jennifer" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/sunrise-over-tokyo.jpg" alt="Sunrise Over Tokyo" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/joanna-model.jpg" alt="Joanna" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/the-apostles.jpg" alt="The Apostles" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/karen-model.jpg" alt="Karen" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/turbulence.jpg" alt="Turbulence" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/larna-model.jpg" alt="Larna" loading="lazy"></a><a href="ritushka.html" tabindex="-1"><img src="img/rit/turquoise-tuesday.jpg" alt="Turquoise Tuesday" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/laura-model.jpg" alt="Laura" loading="lazy"></a><a href="nikki-b.html" tabindex="-1"><img src="img/nik/madelin-model.jpg" alt="Madelin" loading="lazy"></a></div></div>
+</section>
+
+<section class="sec visit" id="visit">
+  <div class="wrap grid2">
+    <div class="copy">
+      <p class="kicker rv">Visit</p>
+      <h2 class="big rv">Come in.<br>Have a look.<br><em>Stay a while.</em></h2>
+      <div class="open-now rv" data-opennow><i></i><span>…</span></div>
+      <address class="rv">
+        <b>68 Campbell Street</b><br>Surry Hills, Sydney NSW<br>
+        <a href="https://www.google.com/maps/search/?api=1&query=68+Campbell+Street+Surry+Hills+NSW" target="_blank" rel="noopener">Open in Maps ↗</a>
+      </address>
+      <p class="rv small">Parking round here is a bit of a nightmare, so we'd suggest catching a train. If you do need to drive, there's a car park right over the road.</p>
+    </div>
+    <div class="side">
+      <div class="hours rv" data-hours aria-label="Opening hours"></div>
+      <div class="invite rv">
+        <p class="kicker">Soft opening</p>
+        <h3>Thursday 29th October · 6pm</h3>
+        <p>A relaxed, no-pressure evening just for friends. Wander through the art, tell us what you think (kindly, please), and help us christen the space. And yes, there will be bubbles. Plenty of them.</p>
+        <p><a class="btn magnetic" data-mail="gallery" data-subject="RSVP — NITA Gallery soft opening, Thu 29 Oct" data-body="Hi Nick & Ritushka,%0D%0A%0D%0AI'd love to come to the soft opening.%0D%0A%0D%0AName:%0D%0ANumber of guests:" href="#"><span>RSVP so we know how many glasses to pour</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <img src="img/brand/nita-logo.png" alt="NITA Gallery">
+  <nav aria-label="Footer"><a href="index.html">The Gallery</a><a href="ritushka.html">Ritushka</a><a href="nick-brand.html">Nick Brand</a><a href="nikki-b.html">Nikki B</a><a href="jewellery.html">Jewellery</a><a href="index.html#visit">Visit</a></nav>
+  <p class="support">Proudly supported by <b>ACME Framing</b></p>
+  <p class="fine">68 Campbell Street, Surry Hills · Ritushka · Nick Brand Photography · Nikki B<br>
+  All artworks © their artists. Prices in Australian dollars and subject to confirmation at enquiry.</p>
+</footer>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Details">
+  <button class="m-close" id="mClose" aria-label="Close">✕</button>
+  <button class="m-nav prev" id="mPrev" aria-label="Previous">←</button>
+  <button class="m-nav next" id="mNext" aria-label="Next">→</button>
+  <div class="m-body">
+    <div class="m-img"><img id="mImg" alt=""><div class="m-thumbs" id="mThumbs"></div></div>
+    <div class="m-info" id="mInfo"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

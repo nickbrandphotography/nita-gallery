@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritushka — Abstract Painting · NITA Gallery</title>
+<meta name="description" content="Ritushka: large abstract landscapes and seascapes, original acrylic on canvas, painted in translucent layers. Now showing at NITA Gallery, Surry Hills.">
+<meta property="og:title" content="Ritushka — Abstract Painting · NITA Gallery">
+<meta property="og:description" content="Ritushka: large abstract landscapes and seascapes, original acrylic on canvas, painted in translucent layers. Now showing at NITA Gallery, Surry Hills.">
+<meta property="og:image" content="img/brand/ritushka-chair.jpg">
+<meta name="theme-color" content="#252525">
+<link rel="icon" href="img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Josefin+Sans:wght@100;200;300;400;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/rit.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="t-rit">
+<div class="curtain start" id="curtain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<header class="nav dark" id="nav">
+  <a href="index.html" class="wordmark" aria-label="NITA Gallery — home"><img src="img/brand/nita-logo-t.png" alt="NITA Gallery"></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="index.html">The Gallery</a><a href="ritushka.html" aria-current="page">Ritushka</a><a href="nick-brand.html">Nick Brand</a><a href="nikki-b.html">Nikki B</a><a href="jewellery.html">Jewellery</a>
+    <a href="index.html#visit" class="pill">Visit</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+<section class="r-hero">
+  <div class="r-wall-bg" aria-hidden="true">
+    <img class="cv c1" data-depth="0.8" src="img/rit/shoreham.jpg" alt="">
+    <img class="cv c2" data-depth="1.5" src="img/rit/horizon.jpg" alt="">
+    <img class="cv c3" data-depth="1.0" src="img/rit/peony-thinking-of-me.jpg" alt="">
+    <img class="cv c4" data-depth="1.8" src="img/rit/turbulence.jpg" alt="">
+    <img class="cv c5" data-depth="0.6" src="img/rit/the-apostles.jpg" alt="">
+    <img class="cv c6" data-depth="1.3" src="img/rit/just-add-champagne.jpg" alt="">
+    <img class="cv c7" data-depth="0.9" src="img/rit/approaching-destination.jpg" alt="">
+  </div>
+  <div class="r-hero-t">
+    <p class="kicker rv">Abstract painting · Lane Cove, Sydney</p>
+    <h1 class="r-title"><span>Ritu</span><span class="g">shka</span></h1>
+    <p class="serif rv">Landscapes and seascapes, built in translucent layers.</p>
+    <p class="rv r-cta"><a class="btn dk magnetic" href="#wall"><span>See the originals</span></a> <a class="btn dk ghost magnetic" data-mail="ritushka" href="#"><span>Enquire</span></a></p>
+  </div>
+  <div class="scroll-cue dk" aria-hidden="true"><span></span></div>
+</section>
+
+<section class="r-story">
+  <div class="wrap grid2">
+    <div class="portrait tilt rv rit-portrait">
+      <img src="img/brand/ritushka-chair.jpg" alt="Ritushka in her studio, smiling, arms folded over a chair" loading="lazy">
+      <img class="p2" src="img/brand/ritushka-studio.jpg" alt="Ritushka painting in her Lane Cove studio" loading="lazy">
+    </div>
+    <div class="copy">
+      <p class="kicker rv">The artist</p>
+      <h2 class="r-h rv">Between the grey concrete of a Hungarian winter and the explosive blue of an Australian sky.</h2>
+      <blockquote class="rv">“Explore your own imagination. I've already given you mine.”</blockquote>
+      <p class="rv">Born in Budapest and now painting from a studio in Lane Cove, Ritushka builds large abstract landscapes and seascapes in translucent layers, drawing on the Australian coastline, light and weather.</p>
+      <p class="rv">She does not paint what she sees. She paints what remained after everything else was stripped away. She does not want you to understand her paintings; she wants you to fall into them. Every acrylic pour, every layered scrape, every sudden rupture of colour is an invitation, an open door, a dare.</p>
+      <ul class="facts rv">
+        <li><b>300+</b><span>works completed</span></li>
+        <li><b>3</b><span>continents of collectors</span></li>
+        <li><b>100%</b><span>hand-painted originals, signed, with certificate</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="r-wall" id="wall">
+  <div class="wrap">
+    <div class="r-wall-head">
+      <h2 class="r-h2 rv">The Wall</h2>
+      <p class="rv" id="wallCount"></p>
+    </div>
+    <div class="r-controls rv">
+      <div class="chips" id="colChips" role="group" aria-label="Collection">
+        <button class="on" data-c="all">All</button>
+        <button data-c="landscape">Abstract landscapes</button>
+        <button data-c="seascape">Abstract seascapes</button>
+        <button data-c="large">Large scale</button>
+        <button data-c="statement">Statement</button>
+        <button data-c="other">Other works</button>
+      </div>
+      <div class="seg" id="statusSeg" role="group" aria-label="Availability">
+        <button class="on" data-s="avail">Available</button><button data-s="sold">Sold</button><button data-s="all">Both</button>
+      </div>
+    </div>
+    <div class="r-masonry" id="rWall"></div>
+    <p class="hint">Original acrylic on canvas, hand-painted, signed, with certificate of authenticity. Prices in AUD, framed in a floating oak frame, excluding insured shipping. Colours may vary slightly between screen and the physical work.</p>
+  </div>
+</section>
+
+<section class="r-process">
+  <div class="wrap">
+    <p class="kicker rv">Commissions</p>
+    <h2 class="r-h2 rv">An original made for your space.</h2>
+    <p class="lede rv">Your size, your palette, your scale. Every commission can also be custom framed to suit the room it's going into.</p>
+    <ol class="steps">
+      <li class="rv"><i>1</i><h4>Brief</h4><p>Share your space, size, palette and timeline. The studio replies within two business days.</p></li>
+      <li class="rv"><i>2</i><h4>Proposal</h4><p>Receive a concept, dimensions and quote, with a 50% deposit to begin.</p></li>
+      <li class="rv"><i>3</i><h4>Creation</h4><p>Your painting is created over four to eight weeks, with progress images.</p></li>
+      <li class="rv"><i>4</i><h4>Delivery</h4><p>Final approval, balance, then insured worldwide delivery with a certificate of authenticity.</p></li>
+    </ol>
+    <div class="info-cards">
+      <div class="rv"><h4>Custom framing</h4><p>The floating oak frame shown on each work is the standard choice, not a limit. Any original can be framed in a different timber, tone or profile through specialist Sydney framers, quoted before anything is ordered.</p></div>
+      <div class="rv"><h4>Shipping &amp; installation</h4><p>Worldwide, fully insured, with tracking. Free local delivery on originals over A$1,000 within roughly 50&nbsp;km of the Lane Cove studio. Hanging, levelling and lighting available at extra cost.</p></div>
+      <div class="rv"><h4>For the trade</h4><p>Programs for interior designers, art consultants, buyer's agents and corporate clients: trade pricing, reserved previews, custom sizes and white-glove delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="r-end">
+  <div class="wrap">
+    <h2 class="r-quote rv">“Explore your own imagination.”</h2>
+    <p class="serif rv">Visit the paintings in person at NITA Gallery, 68 Campbell Street, Surry Hills.</p>
+    <p class="rv"><a class="btn dk lg2 magnetic" data-mail="ritushka" href="#"><span>Write to Ritushka</span></a></p>
+    <p class="contact rv">studio@ritushka.art · Instagram @ritushka.art · ritushka.com<br>Enquiries answered within two business days · Prices in Australian dollars</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="img/brand/nita-logo.png" alt="NITA Gallery">
+  <nav aria-label="Footer"><a href="index.html">The Gallery</a><a href="ritushka.html">Ritushka</a><a href="nick-brand.html">Nick Brand</a><a href="nikki-b.html">Nikki B</a><a href="jewellery.html">Jewellery</a><a href="index.html#visit">Visit</a></nav>
+  <p class="support">Proudly supported by <b>ACME Framing</b></p>
+  <p class="fine">68 Campbell Street, Surry Hills · Ritushka · Nick Brand Photography · Nikki B<br>
+  All artworks © their artists. Prices in Australian dollars and subject to confirmation at enquiry.</p>
+</footer>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Details">
+  <button class="m-close" id="mClose" aria-label="Close">✕</button>
+  <button class="m-nav prev" id="mPrev" aria-label="Previous">←</button>
+  <button class="m-nav next" id="mNext" aria-label="Next">→</button>
+  <div class="m-body">
+    <div class="m-img"><img id="mImg" alt=""><div class="m-thumbs" id="mThumbs"></div></div>
+    <div class="m-info" id="mInfo"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/ritushka.js"></script>
+</body>
+</html>
