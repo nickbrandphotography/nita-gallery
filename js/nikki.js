@@ -13,7 +13,7 @@ function render() {
     <figure class="kt" data-i="${i}" style="--i:${i}" tabindex="0" data-hot>
       <img class="${view}" src="${srcOf(n, view)}" alt="${esc(alt(n, view))}" loading="lazy">
       <b class="dot" style="background:rgb(${n.rgb})"></b>
-      <h4>${esc(n.name)}</h4><span>AUD $75</span>
+      <h4>${esc(n.name)}</h4><span>AUD $120</span>
     </figure>`).join('') : '<p class="k-empty">Nothing in this colour yet.</p>';
   $('#kCount').textContent = `· ${list.length}`;
 }
@@ -33,7 +33,7 @@ const ctx = i => ({ n: list.length, i, get() {
     <p class="meta">Nikki B · Scarf &amp; sarong</p><h3>${esc(n.name)}</h3>
     <p class="meta" style="color:var(--mute)">100% Modal · 100 × 200 cm · Hand wash</p>
     <p><em class="serif" style="font-size:1.2em">The place:</em> ${esc(n.story)}</p>
-    <p class="pr">AUD $75</p>
+    <p class="pr">AUD $120</p>
     <a class="btn" href="${mail('nikki', 'Enquiry — nikkib ' + n.name)}"><span>Ask about ${esc(n.name)}</span></a>` };
 } });
 grid.addEventListener('click', e => { const f = e.target.closest('.kt'); if (f) openModal(ctx(+f.dataset.i)); });

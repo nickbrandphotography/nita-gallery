@@ -24,7 +24,7 @@
 .k-copy>p{max-width:30rem;margin-bottom:1.4rem}
 .k-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .k-arch{position:relative}
-.k-arch>img{width:100%;aspect-ratio:3/4.1;object-fit:cover;object-position:35% 40%;border-radius:999px 999px 10px 10px;box-shadow:0 50px 80px -40px rgba(176,42,154,.55)}
+.k-arch>img{width:100%;aspect-ratio:1;object-fit:cover;object-position:35% 40%;border-radius:24px;box-shadow:0 50px 80px -40px rgba(176,42,154,.55)}
 .k-badge{position:absolute;left:-3.5rem;bottom:3rem;width:clamp(110px,12vw,170px);animation:spin 18s linear infinite;background:#fff;border-radius:50%;padding:6px;box-shadow:0 12px 30px -10px rgba(0,0,0,.3)}
 .k-badge text{font:600 13px 'Josefin Sans',sans-serif;letter-spacing:3.2px;fill:var(--pink)}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -41,7 +41,7 @@
 .k-how{padding:clamp(5rem,10vw,9rem) 0}
 .how3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,3vw,3rem);align-items:start}
 .how3 figure:nth-child(2){margin-top:3.5rem}.how3 figure:nth-child(3){margin-top:7rem}
-.how3 figure>div{aspect-ratio:3/4;overflow:hidden;border-radius:999px 999px 10px 10px;background:#eee}
+.how3 figure>div{aspect-ratio:1;overflow:hidden;border-radius:24px;background:#eee}
 .how3 img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
 .how3 figure:hover img{transform:scale(1.07)}
 .how3 figcaption{padding-top:1.2rem}
@@ -59,10 +59,9 @@
 .seg.k button:hover{border-color:var(--ink)}
 .seg.k .on{background:var(--pink);border-color:var(--pink);color:#fff}
 .k-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(260px,29vw,400px);grid-auto-flow:dense;gap:clamp(.7rem,1.4vw,1.2rem)}
-.kt{position:relative;overflow:hidden;cursor:pointer;background:#fff;border-radius:6px;animation:cardin .7s var(--ease) backwards;animation-delay:calc(var(--i)*30ms)}
+.kt{position:relative;overflow:hidden;cursor:pointer;background:#fff;border-radius:18px;animation:cardin .7s var(--ease) backwards;animation-delay:calc(var(--i)*30ms)}
 @keyframes cardin{from{opacity:0;transform:scale(.94) translateY(30px)}}
 .kt:nth-child(9n+1){grid-column:span 2;grid-row:span 2}
-.kt:nth-child(9n+5){border-radius:999px 999px 6px 6px}
 .kt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%;transition:transform 1.2s var(--ease),opacity .5s}
 .kt img.scarf{object-position:center}
 .kt:hover img{transform:scale(1.07)}
