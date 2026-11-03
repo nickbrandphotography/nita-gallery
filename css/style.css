@@ -289,3 +289,17 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 @keyframes curFail{to{visibility:hidden}}
 
 .room-t h3.long{white-space:normal;font-size:clamp(1.6rem,2.6vw,2.4rem);line-height:1.1}
+
+/* contact area */
+.contact{padding-top:0;padding-bottom:clamp(4rem,8vw,7rem)}
+.contact .grid2{align-items:start}
+.big-mail a{font:300 clamp(1.25rem,2.6vw,2.1rem)/1.25 var(--display);text-decoration:none;border-bottom:1px solid var(--pink);word-break:break-word;transition:color .3s}
+.big-mail a:hover{color:var(--orange)}
+.c-form{display:grid;gap:1.3rem;background:#1d1d1d;border:1px solid #3a3a3a;border-radius:8px;padding:clamp(1.4rem,3vw,2.4rem)}
+.c-form label{display:grid;gap:.35rem;font:400 .68rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.c-form input,.c-form textarea{font:300 1.05rem var(--body);letter-spacing:0;text-transform:none;color:var(--ink);background:none;border:0;border-bottom:1px solid #565656;padding:.6rem 0;outline:none;resize:vertical;transition:border-color .3s}
+.c-form input:focus,.c-form textarea:focus{border-color:var(--pink)}
+.c-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.c-form .btn{justify-self:start}
+.c-form .btn:disabled{opacity:.6;cursor:progress}
+.c-form .err{color:#ff7a6a}

@@ -9,7 +9,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 
 /* ---- contact config: change these in one place ---- */
 const EMAIL = {
-  gallery: 'hello@bodyscapes.com.au',
+  gallery: 'studio@nickbrandphotography.com',
   ritushka: 'studio@ritushka.art',
   nick: 'hello@bodyscapes.com.au',
   nikki: 'live@nikkibfashion.com'
@@ -169,6 +169,25 @@ addEventListener('keydown', e => {
   if (modal.hidden) return;
   if (e.key === 'Escape') closeModal(); if (e.key === 'ArrowLeft') go(-1); if (e.key === 'ArrowRight') go(1);
 });
+
+/* ---- contact form: sends through /api/contact, or opens the visitor's email app if sending isn't switched on ---- */
+(() => {
+  const f = $('#contactForm'); if (!f) return;
+  const note = $('#cfNote'), btn = $('button[type=submit]', f), label = $('span', btn);
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = f.name.value.trim(), email = f.email.value.trim(), message = f.message.value.trim();
+    if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message) { note.textContent = 'Please add your name, a valid email and a message.'; note.classList.add('err'); return; }
+    note.classList.remove('err'); btn.disabled = true; label.textContent = 'Sending…';
+    try {
+      const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, email, message, website: f.website.value }) });
+      if (r.ok) { note.textContent = `Thank you. Your message has been sent, and we'll reply to ${email}.`; f.reset(); btn.disabled = false; label.textContent = 'Send message'; return; }
+    } catch (err) { /* fall through to the email app */ }
+    btn.disabled = false; label.textContent = 'Send message';
+    location.href = mail('gallery', `Message from ${name}`, encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`));
+    note.textContent = `We've opened your email app with your message ready to send. If nothing opened, write to us at ${EMAIL.gallery}.`;
+  });
+})();
 
 /* ---- visit info: countdown + hours + open-now (only where present) ---- */
 (() => {
