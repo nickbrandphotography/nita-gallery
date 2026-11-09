@@ -14,7 +14,7 @@ function apply(f) {
   if (empty) empty.hidden = list.length > 0;
 }
 if (filters) filters.addEventListener('click', e => { const b = e.target.closest('button'); if (b) apply(b.dataset.f); });
-const h = location.hash.slice(1), alias = { 'nikki-b': 'scarves', 'art': 'paintings' };
+const h = location.hash.slice(1), alias = { 'nikki-b': 'scarves', 'art': 'paintings', 'photographs': 'fifty-pages' };
 if (filters && h && h !== 'shop') { const f = alias[h] || h; if ($(`button[data-f="${f}"]`, filters)) apply(f); }
 
 /* prints: choosing a size re-points the card (or the pop-up) at that size's catalogue item */
@@ -59,7 +59,7 @@ const ctx = i => ({ n: list.length, i, get() {
       <p class="small">Made to order in Sydney and shipped unframed, rolled in a tube or flat in a rigid mailer. About 10–15 business days in Australia, up to 4 weeks internationally.</p>` : '';
   return { imgs, alt: it ? it.alt : name, html: `
     <div data-item="${esc(id)}" class="${ok ? 'priced' : 'unpriced'}">
-      <p class="meta">${BRAND[brand]}${isPrint ? ' · Limited edition print' : type ? ' · ' + esc(type) : ''}</p><h3>${esc(name)}</h3>
+      <p class="meta">${BRAND[brand]}${isPrint ? ' · Limited edition print' : type && type !== BRAND[brand] ? ' · ' + esc(type) : ''}</p><h3>${esc(name)}</h3>
       ${desc}${story}${frame}${sizes}
       <p class="pr">${pr}${ok && art && !isPrint ? ' <small class="small">framed</small>' : ''}</p>
       <p><button class="add" type="button" data-add="${esc(id)}">Add to cart</button>

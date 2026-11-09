@@ -70,7 +70,7 @@ module.exports = async (req, res) => {
   if (hasFramedPhoto) {   // photographs are framed to order, so ask which frame at checkout
     p.set('custom_fields[0][key]', 'frame');
     p.set('custom_fields[0][label][type]', 'custom');
-    p.set('custom_fields[0][label][custom]', 'Frame colour (photographs)');
+    p.set('custom_fields[0][label][custom]', 'Frame colour');
     p.set('custom_fields[0][type]', 'dropdown');
     [['Black', 'black'], ['Natural oak', 'oak'], ['White', 'white']].forEach(([lab, val], k) => {
       p.set(`custom_fields[0][dropdown][options][${k}][label]`, lab);
@@ -79,7 +79,7 @@ module.exports = async (req, res) => {
   }
   lines.forEach((l, i) => {
     const pc = byId[l.id], b = `line_items[${i}]`;
-    const desc = [pc.type, pc.desc || (pc.brand === 'second-skin' ? pc.alt : ''), pc.place].filter(Boolean).join(' · ');
+    const desc = [pc.type === BRAND[pc.brand] ? '' : pc.type, pc.desc || (pc.brand === 'second-skin' ? pc.alt : ''), pc.place].filter(Boolean).join(' · ');
     p.set(`${b}[quantity]`, String(l.qty));
     p.set(`${b}[price_data][currency]`, CURRENCY);
     p.set(`${b}[price_data][unit_amount]`, String(Math.round(pc.price * 100)));
