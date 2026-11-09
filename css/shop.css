@@ -1,0 +1,59 @@
+/* THE SHOP: shop page, thank-you page, and the product cards shared with the Second Skin page */
+.t-shop{--bg:#232221}
+.s-hero{padding:clamp(8rem,15vw,11.5rem) 0 clamp(1.5rem,4vw,3rem)}
+.s-hero.ty{min-height:82svh;display:grid;align-items:center;padding-bottom:4rem}
+.s-title{font:200 clamp(3rem,9vw,8rem)/.95 var(--display);letter-spacing:-.02em;margin:0 0 1.6rem}
+.s-title em{font-style:normal;font-weight:700;background:var(--grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:slide 8s linear infinite alternate}
+.s-lede{max-width:40rem;color:#d6d0c6;font-size:1.1em;margin-bottom:2rem}
+.s-shop{padding:1rem 0 clamp(3rem,7vw,6rem)}
+
+.s-filters{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2rem}
+.s-filters button{font:400 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.7rem 1.15rem;border:1px solid rgba(255,255,255,.3);border-radius:99px;transition:background .3s,color .3s,border-color .3s}
+.s-filters button i{font-style:normal;opacity:.55;margin-left:.35rem}
+.s-filters button:hover{border-color:#fff}
+.s-filters button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.s-filters button.on{background:var(--ink);color:#1b1b1b;border-color:var(--ink)}
+
+.s-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:clamp(1rem,2vw,1.8rem);text-align:left}
+.s-card{display:flex;flex-direction:column;background:#2e2d2b;border-radius:6px;overflow:hidden;transition:transform .6s var(--ease),box-shadow .6s}
+.s-card[hidden]{display:none}
+.s-card:hover{transform:translateY(-6px);box-shadow:0 30px 50px -28px #000}
+.s-img{display:block;width:100%;aspect-ratio:4/5;overflow:hidden;background:#d9dde1;cursor:pointer}
+.s-img:focus-visible{outline:2px solid var(--yellow);outline-offset:-4px}
+.s-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.s-card:hover .s-img img{transform:scale(1.05)}
+.s-info{display:flex;flex-direction:column;gap:.3rem;flex:1;padding:1rem 1.1rem 1.25rem}
+.s-info small{font:400 .64rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.s-info h3{font:300 1.1rem/1.3 var(--display);letter-spacing:.06em}
+.s-info .pr{font:400 .92rem var(--display);letter-spacing:.08em;color:#f0d68a;margin-bottom:.6rem}
+.s-info>.add,.s-info>.ask{align-self:flex-start;margin-top:auto}
+.s-empty{padding:3rem 0;text-align:center;color:var(--mute)}
+
+.s-notes{padding:clamp(2.5rem,6vw,5rem) 0}
+.s-notes ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;border-top:1px solid rgba(255,255,255,.16);padding-top:2.2rem}
+.s-notes li{display:grid;gap:.4rem;font-size:.95rem;color:#cfc9bf;line-height:1.55}
+.s-notes b{font:400 .78rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+.s-notes a{color:#f0d68a}
+
+/* the pop-up gets the same buttons */
+.m-info .pr{font:400 1.3rem var(--display);letter-spacing:.08em;color:#f0d68a;margin:1rem 0}
+.m-info .add{margin-right:1.2rem}
+.m-info [data-item].unpriced .pr{color:var(--mute);font-size:1rem}
+
+@media (max-width:560px){
+  .s-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+  .s-info{padding:.8rem .8rem 1rem}
+  .s-info h3{font-size:.95rem}
+  .s-info .add{padding:.7rem 1rem;font-size:.64rem;letter-spacing:.14em}
+  .s-info .ask{font-size:.64rem}
+  .s-filters{flex-wrap:nowrap;overflow-x:auto;margin-inline:-1.5rem;padding:0 1.5rem .4rem;scrollbar-width:none}
+  .s-filters button{flex:none}
+}
+
+/* Second Skin page: the cards wear the gold theme */
+.t-jewel .s-card{background:rgba(255,214,120,.05);border:1px solid rgba(255,214,120,.2)}
+.t-jewel .s-card:hover{border-color:rgba(255,214,120,.7);box-shadow:0 30px 50px -28px rgba(232,181,58,.45)}
+.t-jewel .s-info .pr{color:#ffd45e}
+.t-jewel .s-filters{justify-content:center}
+.t-jewel .s-filters button{border-color:rgba(255,214,120,.35)}
+.t-jewel .s-filters button.on{background:#ffd45e;border-color:#ffd45e;color:#1a1204}

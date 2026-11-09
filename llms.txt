@@ -15,12 +15,14 @@
 - Ritushka original paintings (available works): A$1,450 to A$5,250, framed
 - Nick Brand Photography Bodyscapes limited editions (edition of 15): from AUD 1,900 framed
 - Nikki B scarves and sarongs (100% Modal, 100 x 200 cm): AUD $120
-- Jewellery: AUD $75 to AUD $207
+- Second Skin jewellery: price shown on each piece in the shop
+- Online shop: Second Skin jewellery and Nikki B scarves and sarongs, delivered worldwide (delivery priced by country), paid securely in AUD through Stripe
 
 ## Pages
 - [Home and visitor information](https://www.nitagallery.com.au/)
 - [Ritushka, abstract paintings](https://www.nitagallery.com.au/ritushka)
 - [Nick Brand Photography, Bodyscapes](https://www.nitagallery.com.au/nick-brand)
 - [Nikki B scarves and sarongs](https://www.nitagallery.com.au/nikki-b)
-- [Jewellery](https://www.nitagallery.com.au/jewellery)
+- [Second Skin jewellery](https://www.nitagallery.com.au/jewellery)
+- [Shop: jewellery and scarves](https://www.nitagallery.com.au/shop)
 - [Frequently asked questions](https://www.nitagallery.com.au/#faq)

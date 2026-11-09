@@ -69,6 +69,11 @@
 .kt h4{position:absolute;z-index:2;left:1.1rem;bottom:.9rem;font:200 clamp(1.4rem,2.2vw,2rem) var(--display);letter-spacing:.08em;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)}
 .kt span{position:absolute;z-index:2;right:1.1rem;bottom:1.2rem;font:600 .62rem var(--display);letter-spacing:.2em;color:#fff}
 .kt .dot{position:absolute;z-index:2;top:1rem;left:1rem;width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.kt .kadd{position:absolute;z-index:3;top:.8rem;right:.8rem;padding:.55rem .95rem;border-radius:99px;background:#fff;color:#141414;font:600 .62rem var(--display);letter-spacing:.2em;text-transform:uppercase;box-shadow:0 6px 18px -6px rgba(0,0,0,.4);opacity:0;transform:translateY(-6px);transition:opacity .35s,transform .35s var(--ease),background .3s,color .3s}
+.kt:hover .kadd,.kt:focus-within .kadd,.kt .kadd:focus-visible{opacity:1;transform:none}
+.kt .kadd:hover{background:var(--pink);color:#fff}
+.kt.unpriced .kadd{display:none}
+@media (hover:none){.kt .kadd{opacity:1;transform:none}}
 .kt.swap img{animation:swapIn .6s var(--ease)}
 @keyframes swapIn{from{opacity:0;transform:scale(1.06)}}
 .k-empty{grid-column:1/-1;text-align:center;padding:4rem 0;color:var(--mute)}

@@ -1,0 +1,77 @@
+/* THE BAG: header button, drawer, toast, and the shared "Add to bag" button. Loaded on every page. */
+.nav .links{margin-left:auto}
+.bag-btn{position:relative;flex:none;width:46px;height:46px;margin-left:clamp(.6rem,1.4vw,1.2rem);display:grid;place-items:center;border-radius:50%;color:inherit;transition:background .3s,transform .3s var(--ease)}
+.bag-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.bag-btn:hover{background:rgba(255,255,255,.12)}
+.bag-btn:focus-visible,.add:focus-visible,.dr-close:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.bag-count{position:absolute;top:3px;right:1px;min-width:19px;height:19px;padding:0 5px;border-radius:99px;background:var(--grad);color:#fff;font:600 .68rem/19px var(--display);text-align:center;transform:scale(0);transition:transform .35s var(--ease)}
+.bag-btn.has .bag-count{transform:scale(1)}
+.bag-btn.bump{animation:bagbump .6s var(--ease)}
+@keyframes bagbump{35%{transform:scale(1.22) rotate(-8deg)}}
+
+.scrim{position:fixed;inset:0;z-index:120;background:rgba(10,10,10,.58);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:opacity .4s}
+.scrim.on{opacity:1;pointer-events:auto}
+html.bag-open{overflow:hidden}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:121;width:min(440px,100%);display:flex;flex-direction:column;background:#f6f1e8;color:#1c1b19;box-shadow:-30px 0 80px -30px rgba(0,0,0,.6);transform:translateX(104%);visibility:hidden;transition:transform .55s var(--ease),visibility 0s .55s;font-family:var(--body)}
+.drawer.on{transform:none;visibility:visible;transition:transform .55s var(--ease),visibility 0s}
+.dr-head{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 1.5rem;border-bottom:1px solid #ddd5c6}
+.dr-head h3{font:200 1.7rem var(--display);letter-spacing:.14em;text-transform:uppercase}
+.dr-close{width:42px;height:42px;border-radius:50%;font-size:1.1rem;transition:background .3s}
+.dr-close:hover{background:#e8e0d0}
+.dr-list{flex:1;overflow:auto;padding:.4rem 1.5rem}
+.dr-empty{padding:3rem 0;text-align:center;color:#6d675c;line-height:1.6}
+.dr-item{display:grid;grid-template-columns:72px 1fr auto;gap:1rem;align-items:start;padding:1.1rem 0;border-bottom:1px solid #e6dfd0}
+.dr-item img{width:72px;height:96px;object-fit:cover;border-radius:3px;background:#e9e3d6}
+.dr-item b{display:block;font:600 .84rem/1.3 var(--display);letter-spacing:.12em;text-transform:uppercase}
+.dr-item small{display:block;color:#7a7366;font-size:.8rem;margin:.15rem 0 .6rem}
+.qty{display:inline-flex;align-items:center;border:1px solid #cfc6b4;border-radius:99px}
+.qty button{width:32px;height:32px;font-size:1.1rem;line-height:1;border-radius:50%}
+.qty button:hover{background:#e8e0d0}
+.qty span{min-width:1.6rem;text-align:center;font-size:.9rem}
+.dr-price{text-align:right;font:400 .86rem var(--display);letter-spacing:.06em;white-space:nowrap}
+.dr-price button{display:block;margin:.55rem 0 0 auto;font:300 .76rem var(--body);color:#7a7366;text-decoration:underline}
+.dr-price button:hover{color:#1c1b19}
+.dr-foot{padding:1.2rem 1.5rem 1.5rem;border-top:1px solid #ddd5c6;background:#efe8da}
+.ship{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem;font:400 .7rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:#6d675c}
+.ship select{font:300 1rem var(--body);letter-spacing:0;text-transform:none;color:#1c1b19;padding:.65rem .8rem;border:1px solid #cfc6b4;border-radius:6px;background:#fff;width:100%}
+.dr-line{display:flex;justify-content:space-between;font-size:.92rem;padding:.2rem 0;color:#4a463e}
+.dr-total{display:flex;justify-content:space-between;font:600 1rem var(--display);letter-spacing:.1em;text-transform:uppercase;padding:.8rem 0 1rem;margin-top:.4rem;border-top:1px solid #cfc6b4}
+.dr-foot .btn{width:100%;text-align:center}
+.btn.solid{background:#1c1b19;color:#f6f1e8;border-color:#1c1b19}
+.btn.solid::before{background:var(--grad)}
+.btn.solid:hover{color:#fff}
+.btn.solid[disabled]{opacity:.45;cursor:not-allowed}
+.dr-foot .btn:not(.solid){color:#1c1b19;border-color:#1c1b19}
+.dr-note{margin:.9rem 0 .5rem;font-size:.82rem;line-height:1.5;color:#6d675c}
+.dr-note.err{color:#a3261d}
+.dr-foot .small{display:inline-block;color:#6d675c}
+.dr-foot .small:hover{color:#1c1b19}
+
+.nav.dark .burger i{background:#f5f1ea}
+.toast{position:fixed;left:50%;bottom:1.4rem;z-index:130;width:max-content;transform:translate(-50%,160%);display:flex;gap:1rem;align-items:center;max-width:min(92vw,520px);padding:.85rem 1.2rem;border-radius:99px;background:#f6f1e8;color:#1c1b19;font-size:.92rem;box-shadow:0 20px 50px -15px rgba(0,0,0,.7);transition:transform .5s var(--ease)}
+.toast.on{transform:translate(-50%,0)}
+.toast button{font:600 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;text-decoration:underline;white-space:nowrap}
+
+/* the shared "Add to bag" button (on cards, in the modal) */
+.add{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:600 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.8rem 1.3rem;border-radius:99px;border:1px solid currentColor;position:relative;overflow:hidden;isolation:isolate;transition:color .4s,border-color .4s}
+.add::before{content:"";position:absolute;inset:0;background:var(--grad);transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.add:hover{border-color:transparent;color:#fff}.add:hover::before{transform:none}
+.ask{line-height:1.7;font:400 .72rem/1.7 var(--display);letter-spacing:.2em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;color:inherit;opacity:.8}
+.ask:hover{opacity:1}
+.priced .ask,.unpriced .add{display:none}
+[data-item]:not(.priced):not(.unpriced) .add{opacity:.6}
+
+.links a{white-space:nowrap}
+/* eight header items need more room than the old menu had, so the menu button appears sooner */
+@media (max-width:1240px){
+  .nav .links{position:fixed;inset:0;margin-left:0;background:var(--menubg);flex-direction:column;justify-content:center;gap:1.6rem;transform:translateY(-100%);transition:transform .7s var(--ease)}
+  .nav .links a{font-size:1.2rem}
+  .nav .links.open{transform:none}
+  .nav .burger{display:block;z-index:2;margin-left:.2rem}
+  .nav .wordmark{z-index:2}
+  .bag-btn{margin-left:auto;z-index:2}
+}
+@media (max-width:820px){
+  .toast{bottom:.9rem}
+}
+@media (prefers-reduced-motion:reduce){.drawer,.scrim,.toast{transition:none}.bag-btn.bump{animation:none}}

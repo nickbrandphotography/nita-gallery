@@ -45,3 +45,18 @@
 .j-show .rv.in img{animation:showIn 1.8s var(--ease)}
 @keyframes showIn{from{transform:scale(1.05)}}
 .j-show figcaption{margin-top:1rem;text-align:center;font:400 .72rem var(--display);letter-spacing:.28em;text-transform:uppercase;color:#c9b98f}
+
+/* SECOND SKIN: logo plaque, photo wall, shop cards */
+.ss-logo{margin:0 auto 1.8rem;width:min(700px,86vw)}
+.ss-logo img{width:100%;height:auto;border-radius:14px;box-shadow:0 0 0 1px rgba(255,214,120,.28),0 60px 100px -45px rgba(232,181,58,.55)}
+.j-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+.t-jewel .btn.gd.ghost{border-color:rgba(255,214,120,.4)}
+.j-room{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem)}
+.j-room .kicker{text-align:center}
+.j-gal{column-count:3;column-gap:clamp(.7rem,1.4vw,1.2rem)}
+.j-gal figure{break-inside:avoid;margin:0 0 clamp(.7rem,1.4vw,1.2rem)}
+.j-gal button{display:block;width:100%;overflow:hidden;border-radius:3px;border:1px solid rgba(255,214,120,.22);cursor:zoom-in;background:#1e1407}
+.j-gal button:focus-visible{outline:2px solid #ffd45e;outline-offset:3px}
+.j-gal img{width:100%;height:auto;transition:transform 1.4s var(--ease)}
+.j-gal button:hover img{transform:scale(1.05)}
+@media (max-width:900px){.j-gal{column-count:2}}
