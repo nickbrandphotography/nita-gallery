@@ -43,13 +43,14 @@ const zoneFor = c => SHIP && (SHIP.zones.find(z => z.countries.includes(c)) || S
 const shipCost = () => {
   const z = zoneFor(shipTo), L = lines(); if (!z || !L.length) return null;
   const need = [];
-  if (L.some(i => !isArt(byId[i.id]))) need.push(z.amount);
-  if (L.some(i => isArt(byId[i.id]))) need.push(z.artwork);
+  if (L.some(i => !artShip(byId[i.id]))) need.push(z.amount);
+  if (L.some(i => artShip(byId[i.id]))) need.push(z.artwork);
   return need.every(v => typeof v === 'number' && v >= 0) ? Math.max(...need) : null;
 };
 const BRANDS = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Nick Brand Photography' };
 const brandName = it => BRANDS[it.brand] || 'NITA Gallery';
 const isArt = it => it.brand === 'ritushka' || it.brand === 'nick-brand';
+const artShip = it => it.ship === 'art';   // framed originals and photographs; prints, jewellery and scarves ship small
 const noPrice = it => it.brand === 'nick-brand' ? 'From AUD 1,900 framed' : isArt(it) ? 'Price on enquiry' : 'Price to come';
 
 function enquiryHref() {
@@ -66,7 +67,7 @@ function renderDrawer(note, isErr) {
   drawer.innerHTML = `
     <div class="dr-head"><h3>Your cart</h3><button class="dr-close" type="button" aria-label="Close cart">✕</button></div>
     <div class="dr-list">${L.length ? L.map(i => { const p = byId[i.id]; return `
-      <div class="dr-item"><img src="${esc(p.thumb)}" alt=""><div><b>${esc(p.name)}</b><small>${esc(brandName(p))} · ${esc(p.type)}</small>
+      <div class="dr-item"><img src="${esc(p.thumb)}" alt=""><div><b>${esc(p.name)}</b><small>${esc(brandName(p))} · ${esc(p.type)}${p.dims ? ' · ' + esc(p.dims) : ''}</small>
         <div class="qty"><button type="button" data-q="${esc(p.id)}" data-d="-1" aria-label="One fewer ${esc(p.name)}">−</button><span>${i.qty}</span><button type="button" data-q="${esc(p.id)}" data-d="1" aria-label="One more ${esc(p.name)}">+</button></div></div>
         <div class="dr-price">${priced(p) ? 'AUD ' + money(p.price * i.qty) : esc(noPrice(p))}<button type="button" data-rm="${esc(p.id)}">Remove</button></div></div>`; }).join('')
       : `<p class="dr-empty">${ready ? 'Your cart is empty.<br>Choose a piece and tap “Add to cart”.' : 'Loading…'}</p>`}</div>

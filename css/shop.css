@@ -35,6 +35,15 @@
 .s-notes b{font:400 .78rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
 .s-notes a{color:#f0d68a}
 
+/* prints: size chooser */
+.sizes{width:100%;font:300 .86rem var(--body);color:var(--ink);padding:.6rem .7rem;margin:.35rem 0 .2rem;border:1px solid rgba(255,255,255,.3);border-radius:6px;background:#232221;cursor:pointer}
+.sizes:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
+.s-info .ed{font-size:.78rem;color:var(--mute);margin:-.35rem 0 .7rem}
+.sz{display:block;margin:1rem 0 .4rem}
+.sz span{display:block;font:400 .66rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.m-info .sizes{max-width:22rem}
+.m-info .ed{margin:0 0 .6rem}
+
 /* the pop-up gets the same buttons */
 .m-info .pr{font:400 1.3rem var(--display);letter-spacing:.08em;color:#f0d68a;margin:1rem 0}
 .m-info .add{margin-right:1.2rem}

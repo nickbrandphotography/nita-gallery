@@ -33,16 +33,18 @@ $('#statusSeg').addEventListener('click', e => { const b = e.target.closest('but
 
 const ctx = i => ({ n: view.length, i, get() {
   const a = view[this.i];
+  const prs = (window.BAG ? window.BAG.all() : []).filter(p => p.of === 'rit-' + a.id.slice(4) && !p.sold);
+  const printLine = prs.length ? `<p class="small" style="margin-top:1.4rem">Also available as a signed, numbered limited edition print, from AUD $${Math.min(...prs.map(p => p.price))}. <a href="shop.html#prints" style="text-decoration:underline">See the prints</a></p>` : '';
   return { imgs: [a.img], alt: a.title, html: `
     <p class="meta">Ritushka · ${a.id}</p><h3>${esc(a.title)}</h3>
     <p class="meta" style="color:var(--mute)">${a.size} · Acrylic on canvas</p>
     <p>${esc(a.text)}</p>
     ${a.sold ? `<p class="pr" style="color:var(--mute)">Sold</p><p class="small">A related commission can be created in a comparable size and palette.</p>
-      <a class="btn" href="${mail('ritushka', 'Commission enquiry — similar to ' + a.title)}"><span>Ask about a commission</span></a>`
+      <a class="btn" href="${mail('ritushka', 'Commission enquiry — similar to ' + a.title)}"><span>Ask about a commission</span></a>${printLine}`
     : `<p class="pr">${a.price ? a.price.replace('A$', 'AUD $') + ' <small class="small">framed</small>' : 'Price on enquiry'}</p>
       <p class="small">Original, hand-painted, signed, with certificate of authenticity. Floating oak frame. Insured shipping worldwide.</p>
       <p data-item="rit-${a.id.slice(4)}" class="${a.price ? 'priced' : 'unpriced'}"><button class="add" type="button" data-add="rit-${a.id.slice(4)}">Add to cart</button>
-      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>`}` };
+      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>${printLine}`}` };
 } });
 wall.addEventListener('click', e => { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); });
 wall.addEventListener('keydown', e => { if (e.key === 'Enter') { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); } });

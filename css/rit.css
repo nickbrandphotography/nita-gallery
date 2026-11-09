@@ -86,3 +86,11 @@
   .cv{opacity:.85}
 }
 @media (max-width:640px){.r-masonry{columns:2;column-gap:.8rem}.steps{grid-template-columns:1fr}.r-controls{flex-direction:column}.c5{display:none}.c1{top:12%}.c2{top:70%}}
+
+/* limited edition prints band */
+.r-prints{background:var(--ink);color:var(--paper);padding:clamp(4rem,8vw,7rem) 0;text-align:center}
+.r-prints .kicker{color:#ff9a5a}
+.r-prints .r-h2{margin-bottom:1.5rem}
+.r-prints .lede{color:#d8d0c3;margin:0 auto 2.2rem}
+.r-prints .btn.lg2{background:var(--paper);color:var(--ink)}
+.r-prints .btn.lg2:hover{color:#fff}
