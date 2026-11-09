@@ -48,7 +48,7 @@
 
 /* SECOND SKIN: logo plaque, photo wall, shop cards */
 .ss-logo{margin:0 auto 1.8rem;width:min(700px,86vw)}
-.ss-logo img{width:100%;height:auto;border-radius:14px;box-shadow:0 0 0 1px rgba(255,214,120,.28),0 60px 100px -45px rgba(232,181,58,.55)}
+.ss-logo img{width:100%;height:auto;filter:drop-shadow(0 24px 60px rgba(232,181,58,.28))}
 .j-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
 .t-jewel .btn.gd.ghost{border-color:rgba(255,214,120,.4)}
 .j-room{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem)}
