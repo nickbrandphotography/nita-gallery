@@ -53,10 +53,10 @@
 .t-jewel .btn.gd.ghost{border-color:rgba(255,214,120,.4)}
 .j-room{padding:clamp(2rem,5vw,4rem) 0 clamp(1rem,3vw,2rem)}
 .j-room .kicker{text-align:center}
-.j-gal{column-count:3;column-gap:clamp(.7rem,1.4vw,1.2rem)}
+.j-gal{column-count:2;column-gap:clamp(.7rem,1.4vw,1.2rem);max-width:920px;margin-inline:auto}
 .j-gal figure{break-inside:avoid;margin:0 0 clamp(.7rem,1.4vw,1.2rem)}
 .j-gal button{display:block;width:100%;overflow:hidden;border-radius:3px;border:1px solid rgba(255,214,120,.22);cursor:zoom-in;background:#1e1407}
 .j-gal button:focus-visible{outline:2px solid #ffd45e;outline-offset:3px}
 .j-gal img{width:100%;height:auto;transition:transform 1.4s var(--ease)}
 .j-gal button:hover img{transform:scale(1.05)}
-@media (max-width:900px){.j-gal{column-count:2}}
+
