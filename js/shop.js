@@ -37,7 +37,7 @@ document.addEventListener('change', e => {
 });
 let modalIdx = -1;
 
-const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Nick Brand Photography' };
+const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Fifty Pages of Shades' };
 const MAIL = { 'second-skin': 'gallery', 'nikki-b': 'nikki', 'ritushka': 'ritushka', 'nick-brand': 'nick' };
 const ctx = i => ({ n: list.length, i, get() {
   const c = list[this.i], id = c.dataset.item, it = (window.BAG && window.BAG.item(id)) || null;

@@ -47,7 +47,7 @@ const shipCost = () => {
   if (L.some(i => artShip(byId[i.id]))) need.push(z.artwork);
   return need.every(v => typeof v === 'number' && v >= 0) ? Math.max(...need) : null;
 };
-const BRANDS = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Nick Brand Photography' };
+const BRANDS = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Fifty Pages of Shades' };
 const brandName = it => BRANDS[it.brand] || 'NITA Gallery';
 const isArt = it => it.brand === 'ritushka' || it.brand === 'nick-brand';
 const artShip = it => it.ship === 'art';   // framed originals and photographs; prints, jewellery and scarves ship small

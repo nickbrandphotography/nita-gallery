@@ -6,7 +6,7 @@ const shipping = require('../shipping.json');
 
 const byId = Object.fromEntries(catalog.items.map(i => [i.id, i]));
 const CURRENCY = (catalog.currency || 'aud').toLowerCase();
-const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'nikkib', 'ritushka': 'Ritushka', 'nick-brand': 'Nick Brand Photography' };
+const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'nikkib', 'ritushka': 'Ritushka', 'nick-brand': 'Fifty Pages of Shades' };
 const isArt = it => it.ship === 'art';   // framed originals and photographs; prints, jewellery and scarves ship small
 
 function zoneFor(code) {
