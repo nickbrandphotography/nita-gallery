@@ -4,6 +4,7 @@ const { $, $$, esc, mail, openModal, reduce, fine, data } = window.NITA;
 /* order: Collection I (Bodyscapes) then Collection II (Abstract Forms) */
 const bod = [...data.bod.filter(b => b.series === 'Bodyscapes'), ...data.bod.filter(b => b.series !== 'Bodyscapes')];
 const pad = n => String(n).padStart(2, '0');
+const bid = b => 'bs-' + b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 /* spotlight that follows the cursor */
 if (fine) {
@@ -29,6 +30,9 @@ if (fine) {
     on.src = w.img; on.alt = w.title; on.classList.add('on'); off.classList.remove('on');
     $('#vrNum').textContent = `${pad(i + 1)} / ${bod.length}`; $('#vrTitle').textContent = w.title; $('#vrMeta').textContent = `${w.series} · ${w.size} · Edition of 15`;
     $$('.vr-item', list).forEach(x => x.classList.toggle('on', +x.dataset.i === i));
+    const buy = $('#vrBuy'); buy.dataset.item = bid(w); $('.add', buy).dataset.add = bid(w);
+    $('.ask', buy).href = mail('nick', 'Enquiry — ' + w.title);
+    if (window.BAG) window.BAG.hydrate();
   }
   set(0);
   list.addEventListener('mouseover', e => { const x = e.target.closest('.vr-item'); if (x && fine) set(+x.dataset.i); });
@@ -43,8 +47,10 @@ const ctx = i => ({ n: bod.length, i, get() {
     <p class="meta">Nick Brand Photography · ${b.series}</p><h3>${esc(b.title)}</h3>
     <p class="meta" style="color:var(--mute)">${b.size} · Edition of 15</p>
     <p>Black-and-white photograph on premium canvas, gallery-framed and wired, ready to hang. Floating frame in black, natural oak or white. Signed Certificate of Authenticity and provenance record.</p>
-    <p class="pr">From AUD 1,900 <small class="small">framed</small></p>
-    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Enquire about this edition</span></a>` };
+    <p class="small">Framed to order. You choose the frame colour (black, natural oak or white) at checkout.</p>
+    <div data-item="${bid(b)}" class="unpriced"><p class="pr">From AUD 1,900 framed</p>
+    <p><button class="add" type="button" data-add="${bid(b)}">Add to cart</button>
+    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Enquire about this edition</span></a></p></div>` };
 } });
 
 /* sizes drawn to scale against a 175 cm figure (1 cm = 1.5 units) */

@@ -6,7 +6,8 @@ const shipping = require('../shipping.json');
 
 const byId = Object.fromEntries(catalog.items.map(i => [i.id, i]));
 const CURRENCY = (catalog.currency || 'aud').toLowerCase();
-const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'nikkib' };
+const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'nikkib', 'ritushka': 'Ritushka', 'nick-brand': 'Nick Brand Photography' };
+const isArt = it => it.brand === 'ritushka' || it.brand === 'nick-brand';
 
 function zoneFor(code) {
   return shipping.zones.find(z => z.countries.includes(code)) || shipping.zones.find(z => z.countries.includes('*'));
@@ -29,23 +30,31 @@ module.exports = async (req, res) => {
   let body = req.body;
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch (e) { body = null; } }
   const items = Array.isArray(body && body.items) ? body.items : [];
-  const seen = new Set(), lines = [], unpriced = [];
+  const seen = new Set(), lines = [], unpriced = [], soldOut = [];
   for (const it of items) {
     const id = String(it && it.id), qty = Math.floor(Number(it && it.qty)), pc = byId[id];
     if (!pc || seen.has(id) || !(qty >= 1)) continue;
     seen.add(id);
+    if (pc.sold) { soldOut.push(pc.name); continue; }
     if (!priced(pc)) { unpriced.push(pc.name); continue; }
     lines.push({ id, qty: Math.min(qty, pc.max || 5) });
   }
+  if (soldOut.length) return res.status(422).json({ error: 'sold', names: soldOut });
   if (unpriced.length) return res.status(422).json({ error: 'unpriced', names: unpriced });
   if (!lines.length) return res.status(400).json({ error: 'empty' });
 
   const country = String((body && body.country) || '').toUpperCase();
   if (!shipping.countries[country]) return res.status(400).json({ error: 'bad_country' });
   const zone = zoneFor(country);
-  if (!zone || typeof zone.amount !== 'number' || !(zone.amount >= 0)) {
+  // jewellery and scarves ship at the zone's "amount", framed artworks at its "artwork" price; a mixed cart pays the higher
+  const needs = [];
+  if (lines.some(l => !isArt(byId[l.id]))) needs.push(zone && zone.amount);
+  if (lines.some(l => isArt(byId[l.id]))) needs.push(zone && zone.artwork);
+  if (!zone || needs.some(v => typeof v !== 'number' || !(v >= 0))) {
     return res.status(422).json({ error: 'shipping_unavailable', country: shipping.countries[country] });
   }
+  const shipAmount = Math.max(...needs);
+  const hasFramedPhoto = lines.some(l => byId[l.id].brand === 'nick-brand');
 
   const origin = siteOrigin(req), p = new URLSearchParams();
   p.set('mode', 'payment'); p.set('locale', 'en-AU');
@@ -56,8 +65,18 @@ module.exports = async (req, res) => {
   p.set('shipping_address_collection[allowed_countries][0]', country);
   p.set('shipping_options[0][shipping_rate_data][type]', 'fixed_amount');
   p.set('shipping_options[0][shipping_rate_data][display_name]', zone.label);
-  p.set('shipping_options[0][shipping_rate_data][fixed_amount][amount]', String(Math.round(zone.amount * 100)));
+  p.set('shipping_options[0][shipping_rate_data][fixed_amount][amount]', String(Math.round(shipAmount * 100)));
   p.set('shipping_options[0][shipping_rate_data][fixed_amount][currency]', shipping.currency || CURRENCY);
+  if (hasFramedPhoto) {   // photographs are framed to order, so ask which frame at checkout
+    p.set('custom_fields[0][key]', 'frame');
+    p.set('custom_fields[0][label][type]', 'custom');
+    p.set('custom_fields[0][label][custom]', 'Frame colour (photographs)');
+    p.set('custom_fields[0][type]', 'dropdown');
+    [['Black', 'black'], ['Natural oak', 'oak'], ['White', 'white']].forEach(([lab, val], k) => {
+      p.set(`custom_fields[0][dropdown][options][${k}][label]`, lab);
+      p.set(`custom_fields[0][dropdown][options][${k}][value]`, val);
+    });
+  }
   lines.forEach((l, i) => {
     const pc = byId[l.id], b = `line_items[${i}]`;
     const desc = [pc.type, pc.desc || (pc.brand === 'second-skin' ? pc.alt : ''), pc.place].filter(Boolean).join(' · ');

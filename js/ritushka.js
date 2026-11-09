@@ -20,10 +20,11 @@ const wall = $('#rWall'); let col = 'all', st = 'avail', view = [];
 function render() {
   view = rit.filter(a => (col === 'all' || a.cols.includes(col)) && (st === 'all' || (st === 'sold' ? a.sold : !a.sold)));
   wall.innerHTML = view.map((a, i) => `
-    <figure class="rw ${a.sold ? 'sold' : ''}" data-i="${i}" style="--i:${i}" tabindex="0" data-hot>
-      <div class="im">${a.sold ? '<span class="tag">Sold</span>' : ''}<img src="${a.img}" width="${a.w}" height="${a.h}" alt="${esc(a.title)}, acrylic on canvas by Ritushka" loading="lazy"></div>
+    <figure class="rw ${a.sold ? 'sold' : 'priced'}" ${a.sold ? '' : `data-item="rit-${a.id.slice(4)}"`} data-i="${i}" style="--i:${i}" tabindex="0" data-hot>
+      <div class="im">${a.sold ? '<span class="tag">Sold</span>' : `<button class="kadd" type="button" data-add="rit-${a.id.slice(4)}">+ Cart</button>`}<img src="${a.img}" width="${a.w}" height="${a.h}" alt="${esc(a.title)}, acrylic on canvas by Ritushka" loading="lazy"></div>
       <figcaption><h4>${esc(a.title)}</h4><p>${a.size}${a.sold ? '' : (a.price ? ' · <b>' + a.price.replace('A$', 'AUD $') + '</b>' : '')}</p></figcaption>
     </figure>`).join('');
+  if (window.BAG) window.BAG.hydrate();
   $('#wallCount').textContent = view.length ? `${view.length} ${view.length === 1 ? 'work' : 'works'}` : 'No works in this selection';
 }
 render();
@@ -40,7 +41,8 @@ const ctx = i => ({ n: view.length, i, get() {
       <a class="btn" href="${mail('ritushka', 'Commission enquiry — similar to ' + a.title)}"><span>Ask about a commission</span></a>`
     : `<p class="pr">${a.price ? a.price.replace('A$', 'AUD $') + ' <small class="small">framed</small>' : 'Price on enquiry'}</p>
       <p class="small">Original, hand-painted, signed, with certificate of authenticity. Floating oak frame. Insured shipping worldwide.</p>
-      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a>`}` };
+      <p data-item="rit-${a.id.slice(4)}" class="${a.price ? 'priced' : 'unpriced'}"><button class="add" type="button" data-add="rit-${a.id.slice(4)}">Add to cart</button>
+      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>`}` };
 } });
 wall.addEventListener('click', e => { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); });
 wall.addEventListener('keydown', e => { if (e.key === 'Enter') { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); } });

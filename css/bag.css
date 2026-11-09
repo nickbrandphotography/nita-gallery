@@ -75,3 +75,12 @@ html.bag-open{overflow:hidden}
   .toast{bottom:.9rem}
 }
 @media (prefers-reduced-motion:reduce){.drawer,.scrim,.toast{transition:none}.bag-btn.bump{animation:none}}
+
+/* quick "+ Cart" pill on painting cards, and artwork cards in the shop */
+.rw .kadd{position:absolute;z-index:3;top:.7rem;left:.7rem;padding:.5rem .9rem;border-radius:99px;background:#fff;color:#141414;font:600 .6rem var(--display);letter-spacing:.2em;text-transform:uppercase;box-shadow:0 6px 18px -6px rgba(0,0,0,.4);opacity:0;transform:translateY(-6px);transition:opacity .35s,transform .35s var(--ease),background .3s,color .3s}
+.rw:hover .kadd,.rw:focus-within .kadd,.rw .kadd:focus-visible{opacity:1;transform:none}
+.rw .kadd:hover{background:var(--pink);color:#fff}
+.rw.unpriced .kadd{display:none}
+@media (hover:none){.rw .kadd{opacity:1;transform:none}}
+.s-card.art .s-img{background:#1a1a19}
+.s-card.art .s-img img{object-fit:contain;padding:6%}

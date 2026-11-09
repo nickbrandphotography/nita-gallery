@@ -25,7 +25,11 @@
 
 /* viewing room */
 .vr{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(1.5rem,5vw,5rem);align-items:start}
-.vr-stage{position:sticky;top:5.5rem;cursor:pointer}
+.vr-left{position:sticky;top:5.5rem}
+.vr-stage{cursor:pointer}
+.vr-buy{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem 1.4rem;padding-top:1.2rem}
+.vr-buy .pr{font:200 1.3rem var(--display);letter-spacing:.06em;margin:0}
+.vr-buy .add{color:#fff}
 .vr-frame{position:relative;height:min(66vh,640px);background:#0b0b0b;overflow:hidden}
 .vr-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:scale(1.04);transition:opacity .8s var(--ease),transform 1.4s var(--ease)}
 .vr-frame img.on{opacity:1;transform:none}
@@ -86,7 +90,7 @@
 
 @media (max-width:980px){
   .vr{grid-template-columns:1fr}
-  .vr-stage{display:none}
+  .vr-left{display:none}
   .vr-list{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
   .vr-group,.vr-intro{grid-column:1/-1}
   .vr-item{flex-direction:column;align-items:flex-start;padding:0;border:0!important;box-shadow:none!important;gap:.4rem;color:#fff}

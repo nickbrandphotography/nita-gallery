@@ -1,5 +1,5 @@
 {
- "_readme": "Set each zone's \"amount\" to the delivery price in Australian dollars (for example 18 or 24.50). Use 0 for free delivery. While an amount is null, customers in that zone see 'to be confirmed' and cannot check out; they can order by email instead. Move a country between zones by editing the countries lists. The last zone (\"*\") catches every country not listed elsewhere.",
+ "_readme": "Set each zone's \"amount\" to the delivery price for jewellery and scarves, and \"artwork\" to the delivery price for framed paintings and photographs, in Australian dollars (for example 18 or 24.50). Use 0 for free delivery. A cart with both kinds is charged the higher of the two. While a price is null, customers in that zone see 'to be confirmed' and cannot check out; they can order by email instead. Move a country between zones by editing the countries lists. The last zone (\"*\") catches every country not listed elsewhere.",
  "currency": "aud",
  "zones": [
   {
@@ -7,6 +7,7 @@
    "name": "Australia",
    "label": "Delivery within Australia",
    "amount": null,
+   "artwork": null,
    "countries": [
     "AU"
    ]
@@ -16,6 +17,7 @@
    "name": "New Zealand & the Pacific",
    "label": "Delivery to New Zealand and the Pacific",
    "amount": null,
+   "artwork": null,
    "countries": [
     "NZ",
     "FJ",
@@ -41,6 +43,7 @@
    "name": "Asia",
    "label": "Delivery to Asia",
    "amount": null,
+   "artwork": null,
    "countries": [
     "SG",
     "HK",
@@ -74,6 +77,7 @@
    "name": "North America",
    "label": "Delivery to North America",
    "amount": null,
+   "artwork": null,
    "countries": [
     "US",
     "CA",
@@ -87,6 +91,7 @@
    "name": "United Kingdom & Europe",
    "label": "Delivery to the UK and Europe",
    "amount": null,
+   "artwork": null,
    "countries": [
     "GB",
     "IE",
@@ -146,6 +151,7 @@
    "name": "Rest of the world",
    "label": "International delivery",
    "amount": null,
+   "artwork": null,
    "countries": [
     "*"
    ]
