@@ -16,6 +16,7 @@
 .n-hero-t{position:relative;z-index:2;padding-bottom:clamp(3rem,8vh,6rem)}
 .n-title{font:100 clamp(4.5rem,16vw,15rem)/.82 var(--display);letter-spacing:-.045em;margin:.2rem 0 1.5rem}
 .n-title span{font-weight:600;letter-spacing:-.05em}
+.n-hero .n-title{font-size:clamp(3.2rem,10.5vw,9.5rem);line-height:.95}
 .n-title.sm{font-size:clamp(1.8rem,4.4vw,4rem);line-height:1.12;letter-spacing:-.02em}
 .n-title.sm span{display:block;font-weight:100;color:#8d8982;margin-top:.4rem;font-size:.55em}
 .n-hero .serif{color:#fff}

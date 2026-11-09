@@ -51,7 +51,7 @@ const BRANDS = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka':
 const brandName = it => BRANDS[it.brand] || 'NITA Gallery';
 const isArt = it => it.brand === 'ritushka' || it.brand === 'nick-brand';
 const artShip = it => it.ship === 'art';   // framed originals and photographs; prints, jewellery and scarves ship small
-const noPrice = it => it.brand === 'nick-brand' ? 'From AUD 1,900 framed' : isArt(it) ? 'Price on enquiry' : 'Price to come';
+const noPrice = it => it.brand === 'nick-brand' ? 'Inquire' : isArt(it) ? 'Price on enquiry' : 'Price to come';
 
 function enquiryHref() {
   const rows = lines().map(i => { const p = byId[i.id]; return `- ${brandName(p)} ${p.name} x ${i.qty}${priced(p) ? ' (AUD $' + p.price * i.qty + ')' : ' (price to be confirmed)'}`; });

@@ -3,6 +3,7 @@ const { $, $$, esc, mail, openModal, reduce, fine, data } = window.NITA;
 
 /* order: Collection I (Bodyscapes) then Collection II (Abstract Forms) */
 const bod = [...data.bod.filter(b => b.series === 'Bodyscapes'), ...data.bod.filter(b => b.series !== 'Bodyscapes')];
+const seriesName = s => s === 'Bodyscapes' ? 'Fifty Pages of Shades' : s;
 const pad = n => String(n).padStart(2, '0');
 const bid = b => 'bs-' + b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
@@ -15,8 +16,8 @@ if (fine) {
 /* viewing room */
 (() => {
   const list = $('#vrList'); let cur = -1, flip = false;
-  const groups = [['Bodyscapes', 'Collection I · Bodyscapes', 'The signature series. The human form photographed until it reads as terrain: dunes, ridges and tide-lines drawn in skin and shadow.'],
-                  ['Abstract Forms', 'Collection II · Abstract Forms', 'Where Bodyscapes keeps a trace of the figure, Abstract Forms lets it go entirely.']];
+  const groups = [['Bodyscapes', 'Collection I · Fifty Pages of Shades', 'The signature series. The human form photographed until it reads as terrain: dunes, ridges and tide-lines drawn in skin and shadow.'],
+                  ['Abstract Forms', 'Collection II · Abstract Forms', 'Where Fifty Pages of Shades keeps a trace of the figure, Abstract Forms lets it go entirely.']];
   let html = '', n = 0;
   groups.forEach(([k, t, intro]) => {
     html += `<h3 class="vr-group">${t}</h3><p class="vr-intro">${intro}</p>`;
@@ -28,7 +29,7 @@ if (fine) {
     if (i === cur) return; cur = i; const w = bod[i];
     const [on, off] = flip ? [b, a] : [a, b]; flip = !flip;
     on.src = w.img; on.alt = w.title; on.classList.add('on'); off.classList.remove('on');
-    $('#vrNum').textContent = `${pad(i + 1)} / ${bod.length}`; $('#vrTitle').textContent = w.title; $('#vrMeta').textContent = `${w.series} · ${w.size} · Edition of 15`;
+    $('#vrNum').textContent = `${pad(i + 1)} / ${bod.length}`; $('#vrTitle').textContent = w.title; $('#vrMeta').textContent = `${seriesName(w.series)} · ${w.size} · Edition of 15`;
     $$('.vr-item', list).forEach(x => x.classList.toggle('on', +x.dataset.i === i));
     const buy = $('#vrBuy'); buy.dataset.item = bid(w); $('.add', buy).dataset.add = bid(w);
     $('.ask', buy).href = mail('nick', 'Enquiry — ' + w.title);
@@ -44,13 +45,13 @@ if (fine) {
 const ctx = i => ({ n: bod.length, i, get() {
   const b = bod[this.i];
   return { imgs: [b.img], alt: b.title, html: `
-    <p class="meta">Nick Brand Photography · ${b.series}</p><h3>${esc(b.title)}</h3>
+    <p class="meta">Nick Brand Photography · ${seriesName(b.series)}</p><h3>${esc(b.title)}</h3>
     <p class="meta" style="color:var(--mute)">${b.size} · Edition of 15</p>
     <p>Black-and-white photograph on premium canvas, gallery-framed and wired, ready to hang. Floating frame in black, natural oak or white. Signed Certificate of Authenticity and provenance record.</p>
-    <p class="small">Framed to order. You choose the frame colour (black, natural oak or white) at checkout.</p>
-    <div data-item="${bid(b)}" class="unpriced"><p class="pr">From AUD 1,900 framed</p>
+    <p class="small">The price depends on the size of print and the frame (black, natural oak or white). Inquire and the studio will reply with a quote.</p>
+    <div data-item="${bid(b)}" class="unpriced"><p class="pr">Inquire</p>
     <p><button class="add" type="button" data-add="${bid(b)}">Add to cart</button>
-    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Enquire about this edition</span></a></p></div>` };
+    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Inquire about this edition</span></a></p></div>` };
 } });
 
 /* sizes drawn to scale against a 175 cm figure (1 cm = 1.5 units) */

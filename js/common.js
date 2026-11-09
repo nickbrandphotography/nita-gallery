@@ -11,7 +11,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const EMAIL = {
   gallery: 'studio@nickbrandphotography.com',
   ritushka: 'studio@ritushka.art',
-  nick: 'hello@bodyscapes.com.au',
+  nick: 'studio@fiftypagesofshades.com',
   nikki: 'live@nikkibfashion.com'
 };
 const OPENING = new Date('2026-10-29T18:00:00+11:00');
@@ -22,7 +22,7 @@ const WEEK = [
 ];
 const mail = (who, subj, body) => `mailto:${EMAIL[who]}?subject=${encodeURIComponent(subj)}${body ? '&body=' + body : ''}`;
 $$('[data-mail]').forEach(a => {
-  const subj = a.dataset.subject || ({ ritushka: 'Enquiry — Ritushka paintings at NITA Gallery', nick: 'Enquiry — Bodyscapes at NITA Gallery', nikki: 'Enquiry — Nikki B at NITA Gallery' }[a.dataset.mail] || 'NITA Gallery');
+  const subj = a.dataset.subject || ({ ritushka: 'Enquiry — Ritushka paintings at NITA Gallery', nick: 'Enquiry — Fifty Pages of Shades at NITA Gallery', nikki: 'Enquiry — Nikki B at NITA Gallery' }[a.dataset.mail] || 'NITA Gallery');
   a.href = mail(a.dataset.mail, subj, a.dataset.body);
 });
 

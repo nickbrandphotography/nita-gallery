@@ -46,13 +46,13 @@ const ctx = i => ({ n: list.length, i, get() {
   const name = isPrint ? $('h3', c).textContent : it ? it.name : $('h3', c).textContent;
   const ok = it ? window.BAG.priced(it) : c.classList.contains('priced');
   const brand = c.dataset.brand, art = brand === 'ritushka' || brand === 'nick-brand';
-  const pr = ok ? 'AUD ' + window.BAG.money(it.price) : (brand === 'nick-brand' ? 'From AUD 1,900 framed' : art ? 'Price on enquiry' : 'Price to come');
+  const pr = ok ? 'AUD ' + window.BAG.money(it.price) : (brand === 'nick-brand' ? 'Inquire' : art ? 'Price on enquiry' : 'Price to come');
   const type = it ? it.type : '';
   const n = brand === 'nikki-b' ? nik[name.toLowerCase()] : null;
   const imgs = n ? [n.model, n.scarf, n.place] : [it ? it.img : $('img', c).src];
   const desc = isPrint ? '<p>Archival pigment giclée on 308gsm Hahnemühle cotton rag paper, hand-signed and numbered by the artist in pencil, with a certificate of authenticity. Shipped unframed.</p>' : it && it.desc ?`<p>${esc(it.desc)}</p>` : (brand === 'second-skin' && it ? `<p>${esc(it.alt)}</p>` : '');
   const story = n ? `<p><em class="serif" style="font-size:1.2em">The place:</em> ${esc(n.story)}</p>` : '';
-  const frame = brand === 'nick-brand' ? '<p class="small">Framed to order. You choose the frame colour (black, natural oak or white) at checkout.</p>' : '';
+  const frame = brand === 'nick-brand' ? '<p class="small">The price depends on the size of print and the frame (black, natural oak or white). Inquire and the studio will reply with a quote.</p>' : '';
   const subj = encodeURIComponent(`Enquiry — ${BRAND[brand]} ${name}`);
   const sizes = isPrint ? `<label class="sz"><span>Size</span>${$('select.sizes', c).outerHTML.replace(/ selected(="[^"]*")?/g, '').replace(`value="${id}"`, `value="${id}" selected`)}</label>
       <p class="ed small">${it ? 'Edition of ' + it.edition + ', signed and numbered' : ''}</p>
