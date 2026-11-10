@@ -1,0 +1,66 @@
+/* Oak floating frames at true scale on the Ritushka and Nick Brand pages.
+   Every frame is 10 mm of oak plus a 4 mm shadow gap (14 mm in total), measured against the real width of the artwork,
+   so a frame is always exactly in proportion to the picture it surrounds. */
+(() => {
+  const body = document.body;
+  if (!(body.classList.contains('t-rit') || body.classList.contains('t-nick'))) return;
+  const D = window.NITA_DATA || {};
+  const art = {};
+  ['rit', 'bod'].forEach(k => (D[k] || []).forEach(a => { art[a.img.split('/').pop()] = a; }));
+  const MM = 14;                                   // 10 mm oak + 4 mm gap
+  const nums = s => (String(s).match(/\d+(\.\d+)?/g) || []).map(Number);
+  const file = img => (img.currentSrc || img.src || '').split('?')[0].split('/').pop();
+
+  /* real width of the artwork shown in this <img>, in mm (0 if it is not one of the listed artworks) */
+  function widthMM(img) {
+    const a = art[file(img)]; if (!a || !img.naturalWidth || !img.naturalHeight) return 0;
+    const [x, y] = nums(a.size); if (!x || !y) return 0;
+    return (img.naturalWidth >= img.naturalHeight ? Math.max(x, y) : Math.min(x, y)) * 10;
+  }
+  function put(el, boxW, wmm, margin) {
+    const T = boxW * MM / wmm;
+    el.classList.add('fr');
+    el.style.borderImageWidth = T + 'px'; el.style.borderImageOutset = T + 'px';
+    if (margin) el.style.margin = Math.ceil(T) + 'px';
+  }
+  function clear(el) {
+    el.classList.remove('fr'); el.style.borderImageWidth = ''; el.style.borderImageOutset = ''; el.style.margin = '';
+  }
+
+  function scan() {
+    /* Ritushka's wall: frame each picture box */
+    document.querySelectorAll('#rWall .im').forEach(box => {
+      const img = box.querySelector('img'), w = img && widthMM(img);
+      if (w && box.offsetWidth) put(box, box.offsetWidth, w); else clear(box);
+    });
+    /* collage in the Ritushka hero */
+    document.querySelectorAll('img.cv').forEach(img => {
+      const w = widthMM(img);
+      if (w && img.offsetWidth) put(img, img.offsetWidth, w); else clear(img);
+    });
+    /* the enlarged picture in the pop-up */
+    const m = document.getElementById('mImg');
+    if (m) { const w = widthMM(m); if (w && m.offsetWidth && !document.getElementById('modal').hidden) put(m, m.offsetWidth, w, true); else clear(m); }
+    /* Nick Brand's viewing room: the picture sits inside a stage, so the frame is drawn on an overlay */
+    const st = document.querySelector('.vr-frame');
+    if (st) {
+      let ov = st.querySelector('.fr-ov'); if (!ov) { ov = document.createElement('div'); ov.className = 'fr-ov fr'; ov.setAttribute('aria-hidden', 'true'); st.appendChild(ov); }
+      const img = st.querySelector('img.on'), w = img && widthMM(img);
+      if (!w) { ov.style.display = 'none'; }
+      else {
+        const pad = 16, cw = st.clientWidth - 2 * pad, ch = st.clientHeight - 2 * pad, r = img.naturalWidth / img.naturalHeight;
+        const pw = cw / ch > r ? ch * r : cw, ph = cw / ch > r ? ch : cw / r;
+        ov.style.display = 'block'; ov.style.width = pw + 'px'; ov.style.height = ph + 'px';
+        ov.style.left = (pad + (cw - pw) / 2) + 'px'; ov.style.top = (pad + (ch - ph) / 2) + 'px';
+        const T = pw * MM / w; ov.style.borderImageWidth = T + 'px'; ov.style.borderImageOutset = T + 'px';
+      }
+    }
+  }
+
+  let queued = false;
+  const go = () => { if (queued) return; queued = true; setTimeout(() => { queued = false; scan(); }, 40); };
+  addEventListener('resize', go);
+  document.addEventListener('load', go, true);                 // images finishing loading
+  new MutationObserver(go).observe(body, { childList: true, subtree: true, attributes: true, attributeFilter: ['src', 'class', 'hidden'] });
+  go();
+})();

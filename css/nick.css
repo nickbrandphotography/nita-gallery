@@ -103,3 +103,6 @@
   .collect4{grid-template-columns:1fr 1fr}.steps3{grid-template-columns:1fr}.cols2{grid-template-columns:1fr}
 }
 @media (max-width:560px){.collect4{grid-template-columns:1fr}.vr-list{grid-template-columns:1fr}}
+
+/* leave room inside the viewing stage for the frame */
+.vr-frame img{inset:16px;width:calc(100% - 32px);height:calc(100% - 32px)}
