@@ -334,3 +334,6 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .also-h{font:200 clamp(1.8rem,4vw,3rem)/1.1 var(--display);margin:0 0 1rem}
 .also .lede a{color:inherit}
 .rooms.small{height:min(52vh,420px);margin-top:2.2rem}
+
+.room-t h3.sig{margin:.6rem 0 .8rem;line-height:0}
+.room .room-t h3.sig img,.room:hover .room-t h3.sig img{position:static;inset:auto;display:block;height:clamp(3rem,6vw,5rem);width:auto;max-width:100%;object-fit:contain;filter:none;transform:none;transition:none}
