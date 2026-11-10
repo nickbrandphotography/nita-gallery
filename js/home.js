@@ -11,10 +11,6 @@ const { $, $$, sparkles, reduce, fine } = window.NITA;
   const size = () => { W = c.width = c.clientWidth * dpr; H = c.height = c.clientHeight * dpr; };
   size(); addEventListener('resize', size);
   new IntersectionObserver(e => vis = e[0].isIntersecting).observe(c);
-  $('#hero').addEventListener('mousemove', e => {
-    const r = c.getBoundingClientRect(), mx = (e.clientX - r.left) * dpr, my = (e.clientY - r.top) * dpr;
-    if (trail.length < 70) trail.push({ x: mx, y: my, r: (40 + Math.random() * 70) * dpr, col: cols[Math.floor(Math.random() * cols.length)], life: 1 });
-  });
   (function frame(t) {
     requestAnimationFrame(frame); if (!vis) return;
     g.globalCompositeOperation = 'source-over'; g.fillStyle = '#252525'; g.fillRect(0, 0, W, H);
