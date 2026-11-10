@@ -3,12 +3,6 @@ const { $, $$, esc, openModal, sparkles, fine } = window.NITA;
 
 sparkles($('#sparkles'), 130, '255,226,150');
 
-/* a warm glint follows the cursor */
-if (fine) {
-  const g = $('#glint');
-  addEventListener('mousemove', e => { g.classList.add('on'); g.style.setProperty('--mx', e.clientX + 'px'); g.style.setProperty('--my', e.clientY + 'px'); });
-}
-
 /* the photo wall opens full size */
 const gal = $('#gal');
 if (gal) {

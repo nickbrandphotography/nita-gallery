@@ -44,7 +44,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .cursor{position:fixed;left:0;top:0;z-index:90;pointer-events:none;mix-blend-mode:difference;display:none}
 .cursor span{display:block;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#fff;transition:transform .35s var(--ease)}
 .cursor.big span{transform:scale(3.4)}
-@media (hover:hover) and (pointer:fine){.cursor{display:block}}
+.cursor{display:none!important}
 
 /* nav */
 .nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1rem,3vw,2.5rem);transition:padding .4s}

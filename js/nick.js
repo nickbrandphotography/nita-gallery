@@ -7,12 +7,6 @@ const seriesName = s => s === 'Bodyscapes' ? 'Fifty Pages of Shades' : s;
 const pad = n => String(n).padStart(2, '0');
 const bid = b => 'bs-' + b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-/* spotlight that follows the cursor */
-if (fine) {
-  const sp = $('#spot');
-  addEventListener('mousemove', e => { sp.classList.add('on'); sp.style.setProperty('--mx', e.clientX + 'px'); sp.style.setProperty('--my', e.clientY + 'px'); });
-}
-
 /* viewing room */
 (() => {
   const list = $('#vrList'); let cur = -1, flip = false;

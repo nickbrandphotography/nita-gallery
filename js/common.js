@@ -82,14 +82,6 @@ if (loader && loader.isConnected) {
   setTimeout(() => loader.isConnected && hide(), 4000);
 }
 
-/* ---- custom cursor ---- */
-if (fine) {
-  const c = $('#cursor'); let x = 0, y = 0, cx = 0, cy = 0;
-  addEventListener('mousemove', e => { x = e.clientX; y = e.clientY; });
-  (function loop() { cx += (x - cx) * .22; cy += (y - cy) * .22; c.style.transform = `translate3d(${cx}px,${cy}px,0)`; requestAnimationFrame(loop); })();
-  document.addEventListener('mouseover', e => c.classList.toggle('big', !!e.target.closest('a,button,[data-hot],.filters')));
-}
-
 /* ---- magnetic buttons + 3D tilt ---- */
 if (fine && !reduce) {
   $$('.magnetic').forEach(b => {
