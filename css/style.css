@@ -337,3 +337,8 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 
 .room-t h3.sig{margin:.6rem 0 .8rem;line-height:0}
 .room .room-t h3.sig img,.room:hover .room-t h3.sig img{position:static;inset:auto;display:block;height:clamp(3rem,6vw,5rem);width:auto;max-width:100%;object-fit:contain;filter:none;transform:none;transition:none}
+
+/* painting rooms are bright and vivid at rest, not only on hover */
+.room:not(.mono) img{filter:saturate(1.15) brightness(1)}
+.room:not(.mono):hover img{filter:saturate(1.3) brightness(1.05)}
+.room:not(.mono)::after{background:linear-gradient(0deg,rgba(0,0,0,.6),transparent 42%)}
