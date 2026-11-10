@@ -328,3 +328,9 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .social a{color:#d6d0c6;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:1px}
 .social a:hover{color:#fff;border-color:#fff}
 .social a span{opacity:.75}
+
+/* home: wearable art and jewellery sit lower, smaller */
+.also{padding:clamp(4rem,9vw,7rem) 0 0}
+.also-h{font:200 clamp(1.8rem,4vw,3rem)/1.1 var(--display);margin:0 0 1rem}
+.also .lede a{color:inherit}
+.rooms.small{height:min(52vh,420px);margin-top:2.2rem}
