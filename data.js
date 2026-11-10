@@ -11,8 +11,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 391
+   "w": 900,
+   "h": 676,
+   "hi": "img/rit/hi/approaching-destination.jpg"
   },
   {
    "id": "RIT-0002",
@@ -25,8 +26,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 390,
-   "h": 520
+   "w": 675,
+   "h": 900,
+   "hi": "img/rit/hi/aqua-frost-thinking-of-you.jpg"
   },
   {
    "id": "RIT-0003",
@@ -39,8 +41,9 @@ window.NITA_DATA={
    "cols": [
     "landscape"
    ],
-   "w": 519,
-   "h": 520
+   "w": 898,
+   "h": 900,
+   "hi": "img/rit/hi/blue-mountains.jpg"
   },
   {
    "id": "RIT-0004",
@@ -53,8 +56,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 520,
-   "h": 402
+   "w": 900,
+   "h": 695,
+   "hi": "img/rit/hi/bush.jpg"
   },
   {
    "id": "RIT-0005",
@@ -67,8 +71,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 519
+   "w": 900,
+   "h": 899,
+   "hi": "img/rit/hi/coastal-waters.jpg"
   },
   {
    "id": "RIT-0006",
@@ -81,8 +86,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 520,
-   "h": 399
+   "w": 900,
+   "h": 691,
+   "hi": "img/rit/hi/deliciousness.jpg"
   },
   {
    "id": "RIT-0007",
@@ -96,8 +102,9 @@ window.NITA_DATA={
     "seascape",
     "large"
    ],
-   "w": 520,
-   "h": 390
+   "w": 900,
+   "h": 675,
+   "hi": "img/rit/hi/desire.jpg"
   },
   {
    "id": "RIT-0008",
@@ -110,8 +117,9 @@ window.NITA_DATA={
    "cols": [
     "landscape"
    ],
-   "w": 390,
-   "h": 520
+   "w": 676,
+   "h": 900,
+   "hi": "img/rit/hi/eruption.jpg"
   },
   {
    "id": "RIT-0009",
@@ -124,8 +132,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 520,
-   "h": 418
+   "w": 900,
+   "h": 723,
+   "hi": "img/rit/hi/go-with-the-flow.jpg"
   },
   {
    "id": "RIT-0010",
@@ -139,8 +148,9 @@ window.NITA_DATA={
     "landscape",
     "large"
    ],
-   "w": 520,
-   "h": 298
+   "w": 900,
+   "h": 516,
+   "hi": "img/rit/hi/horizon.jpg"
   },
   {
    "id": "RIT-0011",
@@ -153,8 +163,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 519,
-   "h": 520
+   "w": 898,
+   "h": 900,
+   "hi": "img/rit/hi/into-the-ever-blue.jpg"
   },
   {
    "id": "RIT-0012",
@@ -167,8 +178,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 517,
-   "h": 520
+   "w": 894,
+   "h": 900,
+   "hi": "img/rit/hi/just-add-champagne.jpg"
   },
   {
    "id": "RIT-0013",
@@ -179,8 +191,9 @@ window.NITA_DATA={
    "text": "As the morning dew shimmered at the foot of the mountains, a crisp, cool breeze stirred softly through the field, grazing mother earth with a tender, reverent touch",
    "img": "img/rit/life-chooses-you.jpg",
    "cols": [],
-   "w": 519,
-   "h": 520
+   "w": 898,
+   "h": 900,
+   "hi": "img/rit/hi/life-chooses-you.jpg"
   },
   {
    "id": "RIT-0014",
@@ -193,8 +206,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 520,
-   "h": 512
+   "w": 900,
+   "h": 887,
+   "hi": "img/rit/hi/marshmallow.jpg"
   },
   {
    "id": "RIT-0015",
@@ -207,8 +221,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 417,
-   "h": 520
+   "w": 721,
+   "h": 900,
+   "hi": "img/rit/hi/numero-uno.jpg"
   },
   {
    "id": "RIT-0016",
@@ -221,8 +236,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 350,
-   "h": 520
+   "w": 606,
+   "h": 900,
+   "hi": "img/rit/hi/one-of-a-kind.jpg"
   },
   {
    "id": "RIT-0017",
@@ -233,8 +249,9 @@ window.NITA_DATA={
    "text": "A quiet yearning to leave the weight of the world behind, to take flight on gentle wings and disappear into a place where the sky holds endless dreams",
    "img": "img/rit/paragliding.jpg",
    "cols": [],
-   "w": 361,
-   "h": 520
+   "w": 625,
+   "h": 900,
+   "hi": "img/rit/hi/paragliding.jpg"
   },
   {
    "id": "RIT-0018",
@@ -247,8 +264,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 388,
-   "h": 520
+   "w": 671,
+   "h": 900,
+   "hi": "img/rit/hi/peony-thinking-of-me.jpg"
   },
   {
    "id": "RIT-0019",
@@ -262,8 +280,9 @@ window.NITA_DATA={
     "landscape",
     "seascape"
    ],
-   "w": 520,
-   "h": 520
+   "w": 900,
+   "h": 899,
+   "hi": "img/rit/hi/peace-of-white-heaven.jpg"
   },
   {
    "id": "RIT-0020",
@@ -277,8 +296,9 @@ window.NITA_DATA={
     "landscape",
     "large"
    ],
-   "w": 520,
-   "h": 346
+   "w": 900,
+   "h": 599,
+   "hi": "img/rit/hi/plateau.jpg"
   },
   {
    "id": "RIT-0021",
@@ -291,8 +311,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 520,
-   "h": 519
+   "w": 900,
+   "h": 899,
+   "hi": "img/rit/hi/reflection.jpg"
   },
   {
    "id": "RIT-0022",
@@ -303,8 +324,9 @@ window.NITA_DATA={
    "text": "Amid the chaos of voices and symbols, a hidden harmony begins to appear—as though the fragments were always searching for one another to create a story only the soul could understand",
    "img": "img/rit/river-of-my-thoughts.jpg",
    "cols": [],
-   "w": 520,
-   "h": 390
+   "w": 900,
+   "h": 675,
+   "hi": "img/rit/hi/river-of-my-thoughts.jpg"
   },
   {
    "id": "RIT-0023",
@@ -317,8 +339,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 520
+   "w": 900,
+   "h": 900,
+   "hi": "img/rit/hi/rushing-shallows.jpg"
   },
   {
    "id": "RIT-0024",
@@ -331,8 +354,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 509
+   "w": 900,
+   "h": 881,
+   "hi": "img/rit/hi/set-sail.jpg"
   },
   {
    "id": "RIT-0025",
@@ -345,8 +369,9 @@ window.NITA_DATA={
    "cols": [
     "landscape"
    ],
-   "w": 519,
-   "h": 520
+   "w": 898,
+   "h": 900,
+   "hi": "img/rit/hi/shoreham.jpg"
   },
   {
    "id": "RIT-0026",
@@ -360,8 +385,9 @@ window.NITA_DATA={
     "seascape",
     "statement"
    ],
-   "w": 520,
-   "h": 520
+   "w": 900,
+   "h": 900,
+   "hi": "img/rit/hi/soft-awakening.jpg"
   },
   {
    "id": "RIT-0027",
@@ -375,8 +401,9 @@ window.NITA_DATA={
     "seascape",
     "large"
    ],
-   "w": 315,
-   "h": 520
+   "w": 546,
+   "h": 900,
+   "hi": "img/rit/hi/softly-loving-dreamscape.jpg"
   },
   {
    "id": "RIT-0028",
@@ -389,8 +416,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 513
+   "w": 900,
+   "h": 888,
+   "hi": "img/rit/hi/stillness.jpg"
   },
   {
    "id": "RIT-0029",
@@ -404,8 +432,9 @@ window.NITA_DATA={
     "large",
     "statement"
    ],
-   "w": 520,
-   "h": 431
+   "w": 900,
+   "h": 746,
+   "hi": "img/rit/hi/strangely-attracted-to-you.jpg"
   },
   {
    "id": "RIT-0030",
@@ -418,8 +447,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 520,
-   "h": 518
+   "w": 900,
+   "h": 897,
+   "hi": "img/rit/hi/sunrise-over-tokyo.jpg"
   },
   {
    "id": "RIT-0031",
@@ -432,8 +462,9 @@ window.NITA_DATA={
    "cols": [
     "landscape"
    ],
-   "w": 520,
-   "h": 390
+   "w": 900,
+   "h": 674,
+   "hi": "img/rit/hi/the-apostles.jpg"
   },
   {
    "id": "RIT-0032",
@@ -446,8 +477,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 348,
-   "h": 520
+   "w": 603,
+   "h": 900,
+   "hi": "img/rit/hi/the-world-in-my-eyes.jpg"
   },
   {
    "id": "RIT-0033",
@@ -460,8 +492,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 348,
-   "h": 520
+   "w": 601,
+   "h": 900,
+   "hi": "img/rit/hi/the-world-in-my-eyes-ii.jpg"
   },
   {
    "id": "RIT-0034",
@@ -474,8 +507,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 520,
-   "h": 348
+   "w": 900,
+   "h": 603,
+   "hi": "img/rit/hi/tree-of-our-lives.jpg"
   },
   {
    "id": "RIT-0035",
@@ -489,8 +523,9 @@ window.NITA_DATA={
     "landscape",
     "seascape"
    ],
-   "w": 511,
-   "h": 520
+   "w": 885,
+   "h": 900,
+   "hi": "img/rit/hi/turbulence.jpg"
   },
   {
    "id": "RIT-0036",
@@ -503,8 +538,9 @@ window.NITA_DATA={
    "cols": [
     "seascape"
    ],
-   "w": 520,
-   "h": 518
+   "w": 900,
+   "h": 897,
+   "hi": "img/rit/hi/turquoise-tuesday.jpg"
   },
   {
    "id": "RIT-0037",
@@ -517,8 +553,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 387,
-   "h": 520
+   "w": 670,
+   "h": 900,
+   "hi": "img/rit/hi/urban-jungle.jpg"
   },
   {
    "id": "RIT-0038",
@@ -531,8 +568,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 350,
-   "h": 520
+   "w": 605,
+   "h": 900,
+   "hi": "img/rit/hi/without-sweet-harmony.jpg"
   },
   {
    "id": "RIT-0039",
@@ -545,8 +583,9 @@ window.NITA_DATA={
    "cols": [
     "statement"
    ],
-   "w": 353,
-   "h": 520
+   "w": 610,
+   "h": 900,
+   "hi": "img/rit/hi/without-sweet-harmony-ii.jpg"
   },
   {
    "id": "RIT-0040",
@@ -559,8 +598,9 @@ window.NITA_DATA={
    "cols": [
     "other"
    ],
-   "w": 520,
-   "h": 217
+   "w": 900,
+   "h": 376,
+   "hi": "img/rit/hi/behind-the-scenes.jpg"
   }
  ],
  "bod": [
