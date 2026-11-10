@@ -94,3 +94,6 @@
 .r-prints .lede{color:#d8d0c3;margin:0 auto 2.2rem}
 .r-prints .btn.lg2{background:var(--paper);color:var(--ink)}
 .r-prints .btn.lg2:hover{color:#fff}
+
+/* hero title is Ritushka's signature */
+.r-title img{display:block;width:min(760px,90vw);height:auto;margin:.4rem 0 1rem}
