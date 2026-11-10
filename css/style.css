@@ -348,7 +348,7 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .f3{filter:none}
 .f4{aspect-ratio:1}
 .f6{aspect-ratio:3/2}
-.f1{border-image-width:calc(12vw*14/600);border-image-outset:calc(12vw*14/600)}
+.f1{border-image-width:calc(12vw*9/600);border-image-outset:calc(12vw*9/600)}
 .f2{border-image-width:calc(9vw*14/900);border-image-outset:calc(9vw*14/900)}
 .f3{border-image-width:calc(13vw*14/1200);border-image-outset:calc(13vw*14/1200)}
 .f4{border-image-width:calc(9vw*14/1200);border-image-outset:calc(9vw*14/1200)}
