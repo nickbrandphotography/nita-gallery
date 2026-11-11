@@ -9,7 +9,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 
 /* ---- contact config: change these in one place ---- */
 const EMAIL = {
-  gallery: 'studio@nickbrandphotography.com',
+  gallery: 'studio@nitagallery.com.au',
   ritushka: 'studio@ritushka.art',
   nick: 'studio@fiftypagesofshades.com',
   nikki: 'live@nikkibfashion.com'

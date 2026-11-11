@@ -1,6 +1,6 @@
 // Sends the contact-form message to the gallery's inbox using Resend (https://resend.com).
 // Needs RESEND_API_KEY in Vercel. Optional: CONTACT_TO, CONTACT_FROM.
-const TO = process.env.CONTACT_TO || 'studio@nickbrandphotography.com';
+const TO = process.env.CONTACT_TO || 'studio@nitagallery.com.au';
 const FROM = process.env.CONTACT_FROM || 'NITA Gallery <studio@nickbrandphotography.com>';
 
 const clean = (s, max) => String(s == null ? '' : s).replace(/[\r\n]+/g, ' ').trim().slice(0, max);

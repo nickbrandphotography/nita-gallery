@@ -5,7 +5,7 @@
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const EMAIL = 'studio@nickbrandphotography.com';
+const EMAIL = 'studio@nitagallery.com.au';
 const KEY = 'nita-bag', SHIPKEY = 'nita-ship-to';
 
 let CAT = null, byId = {}, SHIP = null, shipTo = 'AU', bag = [], lastFocus = null;
