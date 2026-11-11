@@ -1,5 +1,5 @@
 /* Oak floating frames at true scale on the Ritushka and Nick Brand pages.
-   Every frame is 10 mm of oak plus a 4 mm shadow gap (14 mm in total), measured against the real width of the artwork,
+   Every frame is 10 mm wide in total (7 mm of oak plus a 3 mm shadow gap), measured against the real width of the artwork,
    so a frame is always exactly in proportion to the picture it surrounds. */
 (() => {
   const body = document.body;
@@ -7,7 +7,7 @@
   const D = window.NITA_DATA || {};
   const art = {};
   ['rit', 'bod'].forEach(k => (D[k] || []).forEach(a => { art[a.img.split('/').pop()] = a; }));
-  const MM = 14;                                   // 10 mm oak + 4 mm gap
+  const MM = 10;                                   // the whole visible frame (7 mm oak + 3 mm gap) is 10 mm
   const nums = s => (String(s).match(/\d+(\.\d+)?/g) || []).map(Number);
   const file = img => (img.currentSrc || img.src || '').split('?')[0].split('/').pop();
 

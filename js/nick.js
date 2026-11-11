@@ -63,7 +63,7 @@ const ctx = i => ({ n: bod.length, i, get() {
   let fr = '';
   frames.forEach((f, i) => {
     const w = f.w * k, h = f.h * k, y = hang - h / 2;
-    const fa = 1.0 * k, gp = 0.4 * k, o = fa + gp;           // 10 mm oak, 4 mm shadow gap, at this drawing's scale
+    const fa = 0.7 * k, gp = 0.3 * k, o = fa + gp;           // 10 mm in total: 7 mm oak + 3 mm shadow gap, at this drawing's scale
     const X0 = f.x - o, Y0 = y - o, X1 = f.x + w + o, Y1 = y + h + o, x0 = f.x - gp, y0 = y - gp, x1 = f.x + w + gp, y1 = y + h + gp;
     const poly = (pts, c) => `<polygon points="${pts}" fill="${c}" stroke="#8c6b40" stroke-width=".18" stroke-linejoin="miter"/>`;
     const oak = poly(`${X0},${Y0} ${X1},${Y0} ${x1},${y0} ${x0},${y0}`, '#ecd3a8') + poly(`${X0},${Y0} ${x0},${y0} ${x0},${y1} ${X0},${Y1}`, '#dfc395')
