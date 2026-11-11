@@ -6,7 +6,7 @@
   if (!(body.classList.contains('t-rit') || body.classList.contains('t-nick') || body.classList.contains('t-home'))) return;
   const D = window.NITA_DATA || {};
   const art = {};
-  ['rit', 'bod'].forEach(k => (D[k] || []).forEach(a => { art[a.img.split('/').pop()] = a; }));
+  ['rit', 'bod'].forEach(k => (D[k] || []).forEach(a => { art[a.img.split('?')[0].split('/').pop()] = a; }));
   const MM = 10;                                   // the whole visible frame (7 mm oak + 3 mm gap) is 10 mm
   const nums = s => (String(s).match(/\d+(\.\d+)?/g) || []).map(Number);
   const file = img => (img.currentSrc || img.src || '').split('?')[0].split('/').pop();
@@ -18,7 +18,7 @@
     return (img.naturalWidth >= img.naturalHeight ? Math.max(x, y) : Math.min(x, y)) * 10;
   }
   /* the frame picture comes in several pixel sizes; use the one closest to what the screen needs, so it is never scaled down hard (that is what made it look pixelated) */
-  const SIZES = [8, 12, 16, 24, 32, 48, 72];
+  const SIZES = [3, 4, 6, 8, 12, 16, 24, 32, 48, 72];
   function skin(el, T) {
     const need = T * (window.devicePixelRatio || 1), s = SIZES.find(v => v >= need) || 72;
     el.style.borderImageSource = `url(img/brand/frame-oak-${s}.png)`; el.style.borderImageSlice = String(s);

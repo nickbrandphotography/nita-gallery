@@ -7,13 +7,13 @@ window.NITA_DATA={
    "price": "A$3,850",
    "sold": false,
    "text": "Layered blues and whites evoking the movement of tide over sand",
-   "img": "img/rit/approaching-destination.jpg",
+   "img": "img/rit/approaching-destination.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 676,
-   "hi": "img/rit/hi/approaching-destination.jpg"
+   "hi": "img/rit/hi/approaching-destination.jpg?v=2"
   },
   {
    "id": "RIT-0002",
@@ -22,13 +22,13 @@ window.NITA_DATA={
    "price": "A$2,800",
    "sold": false,
    "text": "The lily pads, crisp with morning's freshness, sway and bend ever so softly beneath the quiet influence of your breath—as if the very dawn were sighing through you",
-   "img": "img/rit/aqua-frost-thinking-of-you.jpg",
+   "img": "img/rit/aqua-frost-thinking-of-you.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 675,
    "h": 900,
-   "hi": "img/rit/hi/aqua-frost-thinking-of-you.jpg"
+   "hi": "img/rit/hi/aqua-frost-thinking-of-you.jpg?v=2"
   },
   {
    "id": "RIT-0003",
@@ -37,13 +37,13 @@ window.NITA_DATA={
    "price": "A$1,950",
    "sold": false,
    "text": "The cliff face emerged from the very breath of the eucalyptus forest—as though the trees had exhaled it into being",
-   "img": "img/rit/blue-mountains.jpg",
+   "img": "img/rit/blue-mountains.jpg?v=2",
    "cols": [
     "landscape"
    ],
    "w": 898,
    "h": 900,
-   "hi": "img/rit/hi/blue-mountains.jpg"
+   "hi": "img/rit/hi/blue-mountains.jpg?v=2"
   },
   {
    "id": "RIT-0004",
@@ -52,13 +52,13 @@ window.NITA_DATA={
    "price": "A$3,550",
    "sold": false,
    "text": "The quiet elegance of nature reveals itself in every uneven line, unexpected detail, and gentle flaw—where imperfection becomes the very essence of perfection",
-   "img": "img/rit/bush.jpg",
+   "img": "img/rit/bush.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 900,
    "h": 695,
-   "hi": "img/rit/hi/bush.jpg"
+   "hi": "img/rit/hi/bush.jpg?v=2"
   },
   {
    "id": "RIT-0005",
@@ -67,13 +67,13 @@ window.NITA_DATA={
    "price": "A$1,450",
    "sold": true,
    "text": "Gentle in its motion yet potent in its purpose, the tide sweeps the sand from the shore—a quiet, unrelenting ritual of renewal",
-   "img": "img/rit/coastal-waters.jpg",
+   "img": "img/rit/coastal-waters.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 899,
-   "hi": "img/rit/hi/coastal-waters.jpg"
+   "hi": "img/rit/hi/coastal-waters.jpg?v=2"
   },
   {
    "id": "RIT-0006",
@@ -82,13 +82,13 @@ window.NITA_DATA={
    "price": "A$3,850",
    "sold": false,
    "text": "A vibrant symphony of flavours, aromas, and sensations unfolds, capturing the intoxicating richness and wonder of life’s most exquisite moments",
-   "img": "img/rit/deliciousness.jpg",
+   "img": "img/rit/deliciousness.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 900,
    "h": 691,
-   "hi": "img/rit/hi/deliciousness.jpg"
+   "hi": "img/rit/hi/deliciousness.jpg?v=2"
   },
   {
    "id": "RIT-0007",
@@ -97,14 +97,14 @@ window.NITA_DATA={
    "price": "A$3,850",
    "sold": false,
    "text": "A longing to escape into a world of wonder, where dreams come alive and anything feels possible",
-   "img": "img/rit/desire.jpg",
+   "img": "img/rit/desire.jpg?v=2",
    "cols": [
     "seascape",
     "large"
    ],
    "w": 900,
    "h": 675,
-   "hi": "img/rit/hi/desire.jpg"
+   "hi": "img/rit/hi/desire.jpg?v=2"
   },
   {
    "id": "RIT-0008",
@@ -113,13 +113,13 @@ window.NITA_DATA={
    "price": "A$3,850",
    "sold": true,
    "text": "A breathtakingly beautiful reality, filled with wonder beyond anything words can truly describe",
-   "img": "img/rit/eruption.jpg",
+   "img": "img/rit/eruption.jpg?v=2",
    "cols": [
     "landscape"
    ],
    "w": 676,
    "h": 900,
-   "hi": "img/rit/hi/eruption.jpg"
+   "hi": "img/rit/hi/eruption.jpg?v=2"
   },
   {
    "id": "RIT-0009",
@@ -128,13 +128,13 @@ window.NITA_DATA={
    "price": "A$6,250",
    "sold": true,
    "text": "Effortlessly merging with the rhythm of those around me, I am carried by a shared energy of movement, connection, and quiet exhilaration",
-   "img": "img/rit/go-with-the-flow.jpg",
+   "img": "img/rit/go-with-the-flow.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 900,
    "h": 723,
-   "hi": "img/rit/hi/go-with-the-flow.jpg"
+   "hi": "img/rit/hi/go-with-the-flow.jpg?v=2"
   },
   {
    "id": "RIT-0010",
@@ -143,14 +143,14 @@ window.NITA_DATA={
    "price": "A$4,850",
    "sold": false,
    "text": "Beyond the horizon of the present lies an unfolding mystery, where the possibilities of the future remain unseen, waiting to reveal their hidden beauty",
-   "img": "img/rit/horizon.jpg",
+   "img": "img/rit/horizon.jpg?v=2",
    "cols": [
     "landscape",
     "large"
    ],
    "w": 900,
    "h": 516,
-   "hi": "img/rit/hi/horizon.jpg"
+   "hi": "img/rit/hi/horizon.jpg?v=2"
   },
   {
    "id": "RIT-0011",
@@ -159,13 +159,13 @@ window.NITA_DATA={
    "price": "A$2,450",
    "sold": true,
    "text": "As we descended beneath the surface, the realms of sky, earth, and the enigmatic underwater world dissolved into one another—converging into a sublime, otherworldly tableau, as if we had slipped into the pages of a forgotten fairy tale, where the very laws of nature had been rewritten by wonder",
-   "img": "img/rit/into-the-ever-blue.jpg",
+   "img": "img/rit/into-the-ever-blue.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 898,
    "h": 900,
-   "hi": "img/rit/hi/into-the-ever-blue.jpg"
+   "hi": "img/rit/hi/into-the-ever-blue.jpg?v=2"
   },
   {
    "id": "RIT-0012",
@@ -174,13 +174,13 @@ window.NITA_DATA={
    "price": "A$2,500",
    "sold": false,
    "text": "The thought of you lingered with me last night, softly tickling my heart with quiet delight",
-   "img": "img/rit/just-add-champagne.jpg",
+   "img": "img/rit/just-add-champagne.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 894,
    "h": 900,
-   "hi": "img/rit/hi/just-add-champagne.jpg"
+   "hi": "img/rit/hi/just-add-champagne.jpg?v=2"
   },
   {
    "id": "RIT-0013",
@@ -189,11 +189,11 @@ window.NITA_DATA={
    "price": "A$2,950",
    "sold": true,
    "text": "As the morning dew shimmered at the foot of the mountains, a crisp, cool breeze stirred softly through the field, grazing mother earth with a tender, reverent touch",
-   "img": "img/rit/life-chooses-you.jpg",
+   "img": "img/rit/life-chooses-you.jpg?v=2",
    "cols": [],
    "w": 898,
    "h": 900,
-   "hi": "img/rit/hi/life-chooses-you.jpg"
+   "hi": "img/rit/hi/life-chooses-you.jpg?v=2"
   },
   {
    "id": "RIT-0014",
@@ -202,13 +202,13 @@ window.NITA_DATA={
    "price": "A$1,950",
    "sold": false,
    "text": "A delicate invitation to experience beauty through subtle sensation, where softness, intimacy, and quiet emotion unfold like a lingering whisper",
-   "img": "img/rit/marshmallow.jpg",
+   "img": "img/rit/marshmallow.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 900,
    "h": 887,
-   "hi": "img/rit/hi/marshmallow.jpg"
+   "hi": "img/rit/hi/marshmallow.jpg?v=2"
   },
   {
    "id": "RIT-0015",
@@ -217,13 +217,13 @@ window.NITA_DATA={
    "price": "A$1,250",
    "sold": true,
    "text": "Drawn to the quiet elegance of sails upon the water, I find a world of freedom, adventure, and endless possibility carried upon the breath of the wind",
-   "img": "img/rit/numero-uno.jpg",
+   "img": "img/rit/numero-uno.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 721,
    "h": 900,
-   "hi": "img/rit/hi/numero-uno.jpg"
+   "hi": "img/rit/hi/numero-uno.jpg?v=2"
   },
   {
    "id": "RIT-0016",
@@ -232,13 +232,13 @@ window.NITA_DATA={
    "price": "A$3,550",
    "sold": true,
    "text": "A quiet yet powerful pursuit to emerge from the vastness of existence, leaving behind a unique imprint that speaks of individuality, courage, and purpose",
-   "img": "img/rit/one-of-a-kind.jpg",
+   "img": "img/rit/one-of-a-kind.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 606,
    "h": 900,
-   "hi": "img/rit/hi/one-of-a-kind.jpg"
+   "hi": "img/rit/hi/one-of-a-kind.jpg?v=2"
   },
   {
    "id": "RIT-0017",
@@ -247,11 +247,11 @@ window.NITA_DATA={
    "price": "A$5,250",
    "sold": false,
    "text": "A quiet yearning to leave the weight of the world behind, to take flight on gentle wings and disappear into a place where the sky holds endless dreams",
-   "img": "img/rit/paragliding.jpg",
+   "img": "img/rit/paragliding.jpg?v=2",
    "cols": [],
    "w": 625,
    "h": 900,
-   "hi": "img/rit/hi/paragliding.jpg"
+   "hi": "img/rit/hi/paragliding.jpg?v=2"
   },
   {
    "id": "RIT-0018",
@@ -260,13 +260,13 @@ window.NITA_DATA={
    "price": "A$2,800",
    "sold": false,
    "text": "The morning sun, with an inexplicable magnetism, drew my very soul into its luminous embrace",
-   "img": "img/rit/peony-thinking-of-me.jpg",
+   "img": "img/rit/peony-thinking-of-me.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 671,
    "h": 900,
-   "hi": "img/rit/hi/peony-thinking-of-me.jpg"
+   "hi": "img/rit/hi/peony-thinking-of-me.jpg?v=2"
   },
   {
    "id": "RIT-0019",
@@ -275,14 +275,14 @@ window.NITA_DATA={
    "price": "A$1,950",
    "sold": false,
    "text": "A beauty untouched by any sense—never seen, tasted, touched, heard, felt, nor smelled—still breathes, still exists, still waits",
-   "img": "img/rit/peace-of-white-heaven.jpg",
+   "img": "img/rit/peace-of-white-heaven.jpg?v=2",
    "cols": [
     "landscape",
     "seascape"
    ],
    "w": 900,
    "h": 899,
-   "hi": "img/rit/hi/peace-of-white-heaven.jpg"
+   "hi": "img/rit/hi/peace-of-white-heaven.jpg?v=2"
   },
   {
    "id": "RIT-0020",
@@ -291,14 +291,14 @@ window.NITA_DATA={
    "price": "A$5,250",
    "sold": false,
    "text": "As we journey onward, the landscape whispers its quiet stories, flowing past like a living painting filled with stillness, harmony, and understated wonder",
-   "img": "img/rit/plateau.jpg",
+   "img": "img/rit/plateau.jpg?v=2",
    "cols": [
     "landscape",
     "large"
    ],
    "w": 900,
    "h": 599,
-   "hi": "img/rit/hi/plateau.jpg"
+   "hi": "img/rit/hi/plateau.jpg?v=2"
   },
   {
    "id": "RIT-0021",
@@ -307,13 +307,13 @@ window.NITA_DATA={
    "price": "A$1,950",
    "sold": true,
    "text": "As we admired the rays of the setting sun cast upon the harbor, you leaned close and whispered softly into my ear",
-   "img": "img/rit/reflection.jpg",
+   "img": "img/rit/reflection.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 900,
    "h": 899,
-   "hi": "img/rit/hi/reflection.jpg"
+   "hi": "img/rit/hi/reflection.jpg?v=2"
   },
   {
    "id": "RIT-0022",
@@ -322,11 +322,11 @@ window.NITA_DATA={
    "price": "A$3,850",
    "sold": false,
    "text": "Amid the chaos of voices and symbols, a hidden harmony begins to appear—as though the fragments were always searching for one another to create a story only the soul could understand",
-   "img": "img/rit/river-of-my-thoughts.jpg",
+   "img": "img/rit/river-of-my-thoughts.jpg?v=2",
    "cols": [],
    "w": 900,
    "h": 675,
-   "hi": "img/rit/hi/river-of-my-thoughts.jpg"
+   "hi": "img/rit/hi/river-of-my-thoughts.jpg?v=2"
   },
   {
    "id": "RIT-0023",
@@ -335,13 +335,13 @@ window.NITA_DATA={
    "price": "A$1,950",
    "sold": true,
    "text": "As though an endless, flowing current—tireless and unyielding in its rush toward the goal—it twists and turns, carving its own relentless path through every obstacle",
-   "img": "img/rit/rushing-shallows.jpg",
+   "img": "img/rit/rushing-shallows.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 900,
-   "hi": "img/rit/hi/rushing-shallows.jpg"
+   "hi": "img/rit/hi/rushing-shallows.jpg?v=2"
   },
   {
    "id": "RIT-0024",
@@ -350,13 +350,13 @@ window.NITA_DATA={
    "price": "A$1,500",
    "sold": false,
    "text": "The wind favored us with perfect tenderness that Sunday, it rose just enough to carry our spirits gently forward",
-   "img": "img/rit/set-sail.jpg",
+   "img": "img/rit/set-sail.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 881,
-   "hi": "img/rit/hi/set-sail.jpg"
+   "hi": "img/rit/hi/set-sail.jpg?v=2"
   },
   {
    "id": "RIT-0025",
@@ -365,13 +365,13 @@ window.NITA_DATA={
    "price": "A$2,950",
    "sold": false,
    "text": "In the gentle details we so often overlook, life reveals its deepest pleasures—proof that the most meaningful moments are sometimes the ones that ask for nothing at all",
-   "img": "img/rit/shoreham.jpg",
+   "img": "img/rit/shoreham.jpg?v=2",
    "cols": [
     "landscape"
    ],
    "w": 898,
    "h": 900,
-   "hi": "img/rit/hi/shoreham.jpg"
+   "hi": "img/rit/hi/shoreham.jpg?v=2"
   },
   {
    "id": "RIT-0026",
@@ -380,14 +380,14 @@ window.NITA_DATA={
    "price": "A$2,500",
    "sold": false,
    "text": "The tranquil blue of early morning light brings me a quiet, happy reminder of that tender night I shared with you—each shade of dawn still echoing your warmth",
-   "img": "img/rit/soft-awakening.jpg",
+   "img": "img/rit/soft-awakening.jpg?v=2",
    "cols": [
     "seascape",
     "statement"
    ],
    "w": 900,
    "h": 900,
-   "hi": "img/rit/hi/soft-awakening.jpg"
+   "hi": "img/rit/hi/soft-awakening.jpg?v=2"
   },
   {
    "id": "RIT-0027",
@@ -396,14 +396,14 @@ window.NITA_DATA={
    "price": "A$4,950",
    "sold": false,
    "text": "The unfathomable narrowness of imagination constrains the spirit's capacity to expand across the vastness of space and the depths of time",
-   "img": "img/rit/softly-loving-dreamscape.jpg",
+   "img": "img/rit/softly-loving-dreamscape.jpg?v=2",
    "cols": [
     "seascape",
     "large"
    ],
    "w": 546,
    "h": 900,
-   "hi": "img/rit/hi/softly-loving-dreamscape.jpg"
+   "hi": "img/rit/hi/softly-loving-dreamscape.jpg?v=2"
   },
   {
    "id": "RIT-0028",
@@ -412,13 +412,13 @@ window.NITA_DATA={
    "price": "A$1,450",
    "sold": true,
    "text": "As we left behind the clamor of the city and the turquoise embrace of the ocean shore, a profound stillness settled over my heart",
-   "img": "img/rit/stillness.jpg",
+   "img": "img/rit/stillness.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 888,
-   "hi": "img/rit/hi/stillness.jpg"
+   "hi": "img/rit/hi/stillness.jpg?v=2"
   },
   {
    "id": "RIT-0029",
@@ -427,14 +427,14 @@ window.NITA_DATA={
    "price": null,
    "sold": true,
    "text": "Sweet moments of affection are often confronted with inexplicable pain",
-   "img": "img/rit/strangely-attracted-to-you.jpg",
+   "img": "img/rit/strangely-attracted-to-you.jpg?v=2",
    "cols": [
     "large",
     "statement"
    ],
    "w": 900,
    "h": 746,
-   "hi": "img/rit/hi/strangely-attracted-to-you.jpg"
+   "hi": "img/rit/hi/strangely-attracted-to-you.jpg?v=2"
   },
   {
    "id": "RIT-0030",
@@ -443,13 +443,13 @@ window.NITA_DATA={
    "price": "A$2,450",
    "sold": false,
    "text": "A breath held between two worlds—the peaceful pause before life bursts forward in a whirlwind of energy, voices, and endless motion",
-   "img": "img/rit/sunrise-over-tokyo.jpg",
+   "img": "img/rit/sunrise-over-tokyo.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 900,
    "h": 897,
-   "hi": "img/rit/hi/sunrise-over-tokyo.jpg"
+   "hi": "img/rit/hi/sunrise-over-tokyo.jpg?v=2"
   },
   {
    "id": "RIT-0031",
@@ -458,13 +458,13 @@ window.NITA_DATA={
    "price": "A$4,850",
    "sold": false,
    "text": "A moment of discovery where reality expands beyond our understanding, revealing a beauty and magnificence that leaves the soul humbled and in awe",
-   "img": "img/rit/the-apostles.jpg",
+   "img": "img/rit/the-apostles.jpg?v=2",
    "cols": [
     "landscape"
    ],
    "w": 900,
    "h": 674,
-   "hi": "img/rit/hi/the-apostles.jpg"
+   "hi": "img/rit/hi/the-apostles.jpg?v=2"
   },
   {
    "id": "RIT-0032",
@@ -473,13 +473,13 @@ window.NITA_DATA={
    "price": "A$3,250",
    "sold": true,
    "text": "To perceive the world through a lens where complexity becomes irresistible, and beauty reveals itself in unexpected curves, layered mysteries, and an alluring elegance that defies convention",
-   "img": "img/rit/the-world-in-my-eyes.jpg",
+   "img": "img/rit/the-world-in-my-eyes.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 603,
    "h": 900,
-   "hi": "img/rit/hi/the-world-in-my-eyes.jpg"
+   "hi": "img/rit/hi/the-world-in-my-eyes.jpg?v=2"
   },
   {
    "id": "RIT-0033",
@@ -488,13 +488,13 @@ window.NITA_DATA={
    "price": "A$3,250",
    "sold": true,
    "text": "To perceive the world through a lens where complexity becomes irresistible, and beauty reveals itself in unexpected curves, layered mysteries, and an alluring elegance that defies convention",
-   "img": "img/rit/the-world-in-my-eyes-ii.jpg",
+   "img": "img/rit/the-world-in-my-eyes-ii.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 601,
    "h": 900,
-   "hi": "img/rit/hi/the-world-in-my-eyes-ii.jpg"
+   "hi": "img/rit/hi/the-world-in-my-eyes-ii.jpg?v=2"
   },
   {
    "id": "RIT-0034",
@@ -503,13 +503,13 @@ window.NITA_DATA={
    "price": "A$6,850",
    "sold": true,
    "text": "Like threads in an endless tapestry, laughter, compassion, love, and respect are gently woven through generations, connecting past, present, and those yet to come",
-   "img": "img/rit/tree-of-our-lives.jpg",
+   "img": "img/rit/tree-of-our-lives.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 900,
    "h": 603,
-   "hi": "img/rit/hi/tree-of-our-lives.jpg"
+   "hi": "img/rit/hi/tree-of-our-lives.jpg?v=2"
   },
   {
    "id": "RIT-0035",
@@ -518,14 +518,14 @@ window.NITA_DATA={
    "price": "A$1,450",
    "sold": false,
    "text": "In the delicate tension between fear and exhilaration, the spirit discovers an intoxicating ecstasy, where vulnerability and courage exist as one",
-   "img": "img/rit/turbulence.jpg",
+   "img": "img/rit/turbulence.jpg?v=2",
    "cols": [
     "landscape",
     "seascape"
    ],
    "w": 885,
    "h": 900,
-   "hi": "img/rit/hi/turbulence.jpg"
+   "hi": "img/rit/hi/turbulence.jpg?v=2"
   },
   {
    "id": "RIT-0036",
@@ -534,13 +534,13 @@ window.NITA_DATA={
    "price": "A$2,950",
    "sold": false,
    "text": "A single day unfolds like a living canvas, glowing with unexpected hues and reminding us that even the most familiar moments can be touched by wonder",
-   "img": "img/rit/turquoise-tuesday.jpg",
+   "img": "img/rit/turquoise-tuesday.jpg?v=2",
    "cols": [
     "seascape"
    ],
    "w": 900,
    "h": 897,
-   "hi": "img/rit/hi/turquoise-tuesday.jpg"
+   "hi": "img/rit/hi/turquoise-tuesday.jpg?v=2"
   },
   {
    "id": "RIT-0037",
@@ -549,13 +549,13 @@ window.NITA_DATA={
    "price": "A$2,950",
    "sold": false,
    "text": "Even amidst the stark monoliths of concrete, nature's raw power erupts forth, demanding a quiet, reverent humility",
-   "img": "img/rit/urban-jungle.jpg",
+   "img": "img/rit/urban-jungle.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 670,
    "h": 900,
-   "hi": "img/rit/hi/urban-jungle.jpg"
+   "hi": "img/rit/hi/urban-jungle.jpg?v=2"
   },
   {
    "id": "RIT-0038",
@@ -564,13 +564,13 @@ window.NITA_DATA={
    "price": "A$2,150",
    "sold": false,
    "text": "A quiet ache born from the desire to feel chosen and protected—a longing for two hearts to face the world together with courage and trust",
-   "img": "img/rit/without-sweet-harmony.jpg",
+   "img": "img/rit/without-sweet-harmony.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 605,
    "h": 900,
-   "hi": "img/rit/hi/without-sweet-harmony.jpg"
+   "hi": "img/rit/hi/without-sweet-harmony.jpg?v=2"
   },
   {
    "id": "RIT-0039",
@@ -579,13 +579,13 @@ window.NITA_DATA={
    "price": "A$2,150",
    "sold": false,
    "text": "A quiet ache born from the desire to feel chosen and protected—a longing for two hearts to face the world together with courage and trust",
-   "img": "img/rit/without-sweet-harmony-ii.jpg",
+   "img": "img/rit/without-sweet-harmony-ii.jpg?v=2",
    "cols": [
     "statement"
    ],
    "w": 610,
    "h": 900,
-   "hi": "img/rit/hi/without-sweet-harmony-ii.jpg"
+   "hi": "img/rit/hi/without-sweet-harmony-ii.jpg?v=2"
   },
   {
    "id": "RIT-0040",
@@ -594,13 +594,13 @@ window.NITA_DATA={
    "price": "A$4,150",
    "sold": true,
    "text": "The closer I look, the grander the scale — under the bark and dust, the more details I find.",
-   "img": "img/rit/behind-the-scenes.jpg",
+   "img": "img/rit/behind-the-scenes.jpg?v=2",
    "cols": [
     "other"
    ],
    "w": 900,
    "h": 376,
-   "hi": "img/rit/hi/behind-the-scenes.jpg"
+   "hi": "img/rit/hi/behind-the-scenes.jpg?v=2"
   }
  ],
  "bod": [
