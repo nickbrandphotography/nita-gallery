@@ -78,7 +78,7 @@ function renderDrawer(note, isErr) {
       <div class="dr-total"><span>Total</span><span>${cost === null ? 'AUD ' + money(sub) + ' + delivery' : 'AUD ' + money(Math.round((sub + cost) * 100) / 100)}</span></div>
       <button class="btn solid" type="button" data-checkout${blocked ? ' disabled' : ''}><span>${blocked ? 'Price on enquiry' : !SHIP || cost !== null ? 'Checkout' : 'Order by email'}</span></button>
       <p class="dr-note${isErr ? ' err' : ''}" id="drNote">${esc(note || (blocked ? 'Some pieces in your cart do not have a price yet. Remove them to check out, or order by email and we will confirm the price.' : SHIP && cost === null ? 'We are still confirming the delivery price to this country. Send us your order by email and we will reply with the total.' : 'Delivery address and payment are entered securely on the next page, powered by Stripe.'))}</p>
-      <a class="small" href="${enquiryHref()}">Prefer to order by email?</a>` : '<a class="btn" href="shop.html"><span>Browse the shop</span></a>'}
+      <a class="small" href="${enquiryHref()}">Prefer to order by email?</a>` : '<a class="btn" href="/shop"><span>Browse the shop</span></a>'}
     </div>`;
 }
 

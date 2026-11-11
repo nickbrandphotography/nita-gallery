@@ -34,7 +34,7 @@ $('#statusSeg').addEventListener('click', e => { const b = e.target.closest('but
 const ctx = i => ({ n: view.length, i, get() {
   const a = view[this.i];
   const prs = (window.BAG ? window.BAG.all() : []).filter(p => p.of === 'rit-' + a.id.slice(4) && !p.sold);
-  const printLine = prs.length ? `<p class="small" style="margin-top:1.4rem">Also available as a signed, numbered limited edition print, from AUD $${Math.min(...prs.map(p => p.price))}. <a href="shop.html#prints" style="text-decoration:underline">See the prints</a></p>` : '';
+  const printLine = prs.length ? `<p class="small" style="margin-top:1.4rem">Also available as a signed, numbered limited edition print, from AUD $${Math.min(...prs.map(p => p.price))}. <a href="/shop#prints" style="text-decoration:underline">See the prints</a></p>` : '';
   return { imgs: [a.hi || a.img], alt: a.title, html: `
     <p class="meta">Ritushka · ${a.id}</p><h3>${esc(a.title)}</h3>
     <p class="meta" style="color:var(--mute)">${a.size} · Acrylic on canvas</p>

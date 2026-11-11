@@ -46,7 +46,7 @@ burger.onclick = () => { const o = links.classList.toggle('open'); burger.setAtt
 
 /* ---- page-change curtain ---- */
 const cur = $('#curtain'), loader = $('#loader');
-const THEME = { 'ritushka.html': '#ff7a1a', 'nick-brand.html': '#000000', 'nikki-b.html': '#f0307f', 'jewellery.html': '#d9a21a', 'index.html': '#252525' };
+const THEME = { 'ritushka': '#ff7a1a', 'nick-brand': '#000000', 'nikki-b': '#f0307f', 'jewellery': '#d9a21a', 'index': '#252525' };
 function reveal() {
   if (!cur) return;
   setTimeout(() => {
@@ -68,7 +68,7 @@ document.addEventListener('click', e => {
   if (u.pathname === location.pathname && !u.hash) return;
   if (reduce || !cur) return;
   e.preventDefault();
-  const key = u.pathname.split('/').pop() || 'index.html';
+  const key = (u.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
   cur.style.setProperty('--cur', THEME[key] || '#252525');
   cur.hidden = false; cur.classList.remove('start', 'out'); void cur.offsetWidth; cur.classList.add('in');
   setTimeout(() => { location.href = a.href; }, 620);
