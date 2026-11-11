@@ -3,7 +3,7 @@
    so a frame is always exactly in proportion to the picture it surrounds. */
 (() => {
   const body = document.body;
-  if (!(body.classList.contains('t-rit') || body.classList.contains('t-nick'))) return;
+  if (!(body.classList.contains('t-rit') || body.classList.contains('t-nick') || body.classList.contains('t-home'))) return;
   const D = window.NITA_DATA || {};
   const art = {};
   ['rit', 'bod'].forEach(k => (D[k] || []).forEach(a => { art[a.img.split('/').pop()] = a; }));
@@ -17,14 +17,20 @@
     const [x, y] = nums(a.size); if (!x || !y) return 0;
     return (img.naturalWidth >= img.naturalHeight ? Math.max(x, y) : Math.min(x, y)) * 10;
   }
+  /* the frame picture comes in several pixel sizes; use the one closest to what the screen needs, so it is never scaled down hard (that is what made it look pixelated) */
+  const SIZES = [8, 12, 16, 24, 32, 48, 72];
+  function skin(el, T) {
+    const need = T * (window.devicePixelRatio || 1), s = SIZES.find(v => v >= need) || 72;
+    el.style.borderImageSource = `url(img/brand/frame-oak-${s}.png)`; el.style.borderImageSlice = String(s);
+    el.style.borderImageRepeat = 'stretch'; el.style.borderImageWidth = T + 'px'; el.style.borderImageOutset = T + 'px';
+  }
   function put(el, boxW, wmm, margin) {
-    const T = boxW * MM / wmm;
-    el.classList.add('fr');
-    el.style.borderImageWidth = T + 'px'; el.style.borderImageOutset = T + 'px';
+    const mm = +(el.dataset.fm || MM), T = boxW * mm / wmm;
+    el.classList.add('fr'); skin(el, T);
     if (margin) el.style.margin = Math.ceil(T) + 'px';
   }
   function clear(el) {
-    el.classList.remove('fr'); el.style.borderImageWidth = ''; el.style.borderImageOutset = ''; el.style.margin = '';
+    el.classList.remove('fr'); ['borderImageSource', 'borderImageSlice', 'borderImageRepeat', 'borderImageWidth', 'borderImageOutset', 'margin'].forEach(k => { el.style[k] = ''; });
   }
 
   function scan() {
@@ -34,7 +40,7 @@
       if (w && box.offsetWidth) put(box, box.offsetWidth, w); else clear(box);
     });
     /* collage in the Ritushka hero */
-    document.querySelectorAll('img.cv').forEach(img => {
+    document.querySelectorAll('img.cv, img.fl').forEach(img => {
       const w = widthMM(img);
       if (w && img.offsetWidth) put(img, img.offsetWidth, w); else clear(img);
     });
@@ -52,7 +58,7 @@
         const pw = cw / ch > r ? ch * r : cw, ph = cw / ch > r ? ch : cw / r;
         ov.style.display = 'block'; ov.style.width = pw + 'px'; ov.style.height = ph + 'px';
         ov.style.left = (pad + (cw - pw) / 2) + 'px'; ov.style.top = (pad + (ch - ph) / 2) + 'px';
-        const T = pw * MM / w; ov.style.borderImageWidth = T + 'px'; ov.style.borderImageOutset = T + 'px';
+        skin(ov, pw * MM / w);
       }
     }
   }

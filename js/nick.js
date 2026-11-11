@@ -63,8 +63,13 @@ const ctx = i => ({ n: bod.length, i, get() {
   let fr = '';
   frames.forEach((f, i) => {
     const w = f.w * k, h = f.h * k, y = hang - h / 2;
+    const fa = 1.0 * k, gp = 0.4 * k, o = fa + gp;           // 10 mm oak, 4 mm shadow gap, at this drawing's scale
+    const X0 = f.x - o, Y0 = y - o, X1 = f.x + w + o, Y1 = y + h + o, x0 = f.x - gp, y0 = y - gp, x1 = f.x + w + gp, y1 = y + h + gp;
+    const poly = (pts, c) => `<polygon points="${pts}" fill="${c}" stroke="#8c6b40" stroke-width=".18" stroke-linejoin="miter"/>`;
+    const oak = poly(`${X0},${Y0} ${X1},${Y0} ${x1},${y0} ${x0},${y0}`, '#ecd3a8') + poly(`${X0},${Y0} ${x0},${y0} ${x0},${y1} ${X0},${Y1}`, '#dfc395')
+      + poly(`${X1},${Y0} ${X1},${Y1} ${x1},${y1} ${x1},${y0}`, '#c8a674') + poly(`${X0},${Y1} ${x0},${y1} ${x1},${y1} ${X1},${Y1}`, '#bd9a68');
     fr += `<g class="fr"><clipPath id="cp${i}"><rect x="${f.x}" y="${y}" width="${w}" height="${h}"/></clipPath>
-      <rect x="${f.x - 5}" y="${y - 5}" width="${w + 10}" height="${h + 10}" fill="#d8c3a0"/>
+      <rect x="${X0}" y="${Y0}" width="${X1 - X0}" height="${Y1 - Y0}" fill="#58585a"/>${oak}
       <image href="${f.src}" x="${f.x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#cp${i})"/>
       <text x="${f.x + w / 2}" y="${floor + 26}" text-anchor="middle" fill="#cfcac2" font-size="12" letter-spacing="3" font-family="Josefin Sans, sans-serif">${f.w} × ${f.h} CM</text></g>`;
   });

@@ -348,12 +348,6 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .f3{filter:none}
 .f4{aspect-ratio:1}
 .f6{aspect-ratio:3/2}
-.f1{border-image-width:calc(12vw*9/600);border-image-outset:calc(12vw*9/600)}
-.f2{border-image-width:calc(9vw*14/900);border-image-outset:calc(9vw*14/900)}
-.f3{border-image-width:calc(13vw*14/1200);border-image-outset:calc(13vw*14/1200)}
-.f4{border-image-width:calc(9vw*14/1200);border-image-outset:calc(9vw*14/1200)}
-.f5{border-image-width:calc(7.5vw*14/610);border-image-outset:calc(7.5vw*14/610)}
-.f6{border-image-width:calc(8vw*14/2000);border-image-outset:calc(8vw*14/2000)}
 
 /* true-scale oak frames on the Ritushka and Nick Brand pages (widths are set by js/frames.js) */
 .fr{border:0 solid transparent;border-image-source:url(../img/brand/frame-oak.png);border-image-slice:56;border-image-repeat:stretch}
