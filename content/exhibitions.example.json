@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "example-coastlines",
+    "title": "Coastlines",
+    "artists": ["Ritushka"],
+    "medium": "large abstract seascapes in acrylic",
+    "count": 12,
+    "announced": "2027-01-10",
+    "start": "2027-02-05",
+    "end": "2027-03-14",
+    "opening": { "date": "2027-02-05", "start": "18:00", "end": "20:00" },
+    "summary": "EXAMPLE ONLY. Coastlines: 12 new abstract seascapes by Ritushka at NITA Gallery, Surry Hills, 5 February to 14 March 2027. Free entry.",
+    "body": [
+      "EXAMPLE TEXT. Coastlines brings together twelve new paintings made over a year of walking the coast between Shoreham and the Apostles.",
+      "Each work is built in translucent layers of acrylic, so the colour shifts as the light in the room changes through the day."
+    ],
+    "quote": { "text": "I paint what stays with me after I leave the beach.", "by": "Ritushka" },
+    "priceFrom": 1450,
+    "hero": { "src": "img/rit/hi/the-apostles.jpg?v=2", "alt": "The Apostles, abstract seascape by Ritushka", "caption": "Ritushka, The Apostles (example image)" },
+    "images": [
+      { "src": "img/rit/hi/shoreham.jpg?v=2", "alt": "Shoreham, abstract seascape by Ritushka", "caption": "Shoreham" },
+      { "src": "img/rit/hi/horizon.jpg?v=2", "alt": "Horizon, abstract seascape by Ritushka", "caption": "Horizon" }
+    ],
+    "works": [
+      { "title": "The Apostles", "url": "https://www.ritushka.com/artwork/the-apostles", "details": "acrylic on canvas" },
+      { "title": "Shoreham", "url": "https://www.ritushka.com/artwork/shoreham", "details": "acrylic on canvas" },
+      { "title": "Horizon", "url": "https://www.ritushka.com/artwork/horizon", "details": "acrylic on canvas" }
+    ]
+  },
+  {
+    "slug": "example-past-show",
+    "title": "Fifty Pages of Shades",
+    "artists": ["Nick Brand"],
+    "medium": "black-and-white fine-art photographs",
+    "count": 17,
+    "start": "2026-06-01",
+    "end": "2026-08-30",
+    "summary": "EXAMPLE ONLY. A past show, to check how finished exhibitions are listed.",
+    "body": ["EXAMPLE TEXT for a past exhibition."],
+    "hero": { "src": "img/brand/bodyscape-hero.jpg", "alt": "Black-and-white photograph from Fifty Pages of Shades by Nick Brand" }
+  }
+]

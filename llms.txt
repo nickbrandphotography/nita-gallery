@@ -21,6 +21,11 @@
 - Second Skin jewellery: price shown on each piece in the shop
 - Online shop: Second Skin jewellery and Nikki B scarves and sarongs, delivered worldwide (delivery priced by country), paid securely in AUD through Stripe
 
+## Exhibitions
+<!-- EXHIBITIONS -->
+- [Exhibitions: current, upcoming and past](https://www.nitagallery.com.au/exhibitions)
+<!-- /EXHIBITIONS -->
+
 ## Pages
 - [Home and visitor information](https://www.nitagallery.com.au/)
 - [Ritushka, abstract paintings](https://www.nitagallery.com.au/ritushka)
