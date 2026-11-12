@@ -23,7 +23,7 @@ const bid = b => 'bs-' + b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').repla
     if (i === cur) return; cur = i; const w = bod[i];
     const [on, off] = flip ? [b, a] : [a, b]; flip = !flip;
     on.src = w.img; on.alt = w.title; on.classList.add('on'); off.classList.remove('on');
-    $('#vrNum').textContent = `${pad(i + 1)} / ${bod.length}`; $('#vrTitle').textContent = w.title; $('#vrMeta').textContent = `${seriesName(w.series)} · ${w.size} · Edition of 15`;
+    $('#vrNum').textContent = `${pad(i + 1)} / ${bod.length}`; $('#vrTitle').textContent = w.title; $('#vrMeta').textContent = `${seriesName(w.series)} · ${w.size} · Edition of 50`;
     $$('.vr-item', list).forEach(x => x.classList.toggle('on', +x.dataset.i === i));
     const buy = $('#vrBuy'); buy.dataset.item = bid(w); $('.add', buy).dataset.add = bid(w);
     $('.ask', buy).href = mail('nick', 'Enquiry — ' + w.title);
@@ -40,7 +40,7 @@ const ctx = i => ({ n: bod.length, i, get() {
   const b = bod[this.i];
   return { imgs: [b.img], alt: b.title, html: `
     <p class="meta">Nick Brand Photography · ${seriesName(b.series)}</p><h3>${esc(b.title)}</h3>
-    <p class="meta" style="color:var(--mute)">${b.size} · Edition of 15</p>
+    <p class="meta" style="color:var(--mute)">${b.size} · Edition of 50</p>
     <p>Black-and-white photograph on premium canvas, gallery-framed and wired, ready to hang. Floating frame in black, natural oak or white. Signed Certificate of Authenticity and provenance record.</p>
     <p class="small">The price depends on the size of print and the frame (black, natural oak or white). Inquire and the studio will reply with a quote.</p>
     <div data-item="${bid(b)}" class="unpriced"><p class="pr">Inquire</p>

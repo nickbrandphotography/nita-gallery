@@ -66,3 +66,5 @@
 .t-jewel .s-filters{justify-content:center}
 .t-jewel .s-filters button{border-color:rgba(255,214,120,.35)}
 .t-jewel .s-filters button.on{background:#ffd45e;border-color:#ffd45e;color:#1a1204}
+.s-info .more{font:400 .7rem/1.5 var(--display);letter-spacing:.06em;color:var(--mute);text-decoration:underline;text-underline-offset:3px;margin:-.15rem 0 .35rem;align-self:flex-start}
+.s-info .more:hover{color:inherit}
