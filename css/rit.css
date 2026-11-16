@@ -106,13 +106,14 @@
 .r-hero .r-hero-t{padding:clamp(2rem,5vw,3.5rem) 1.5rem clamp(3rem,6vw,5rem);background:var(--bg)}
 .r-hero .r-title img{margin-inline:auto}
 
-/* hero: the writing sits on the banner (painting shown whole, not cropped), on a soft light veil so it stays easy to read */
+/* hero: the painting is shown exactly as on ritushka.com (whole, uncropped, nothing over it except a small card holding the writing) */
 .r-art{height:auto}
 .r-art img{height:auto;object-fit:fill;aspect-ratio:auto}
-.r-hero .r-hero-t{position:absolute;inset:4.9rem 0 0 0;display:grid;place-content:center;justify-items:center;padding:.5rem 1rem;background:radial-gradient(ellipse 58% 72% at 50% 50%,rgba(247,242,233,.9) 0,rgba(247,242,233,.62) 45%,rgba(247,242,233,0) 80%)}
-.r-hero .r-hero-t .kicker{font-size:clamp(.55rem,1.1vw,.75rem)}
-.r-hero .r-title{margin:.1rem 0 .5rem}
-.r-hero .r-title img{width:min(520px,40vw);min-width:200px;height:auto}
-.r-hero .r-hero-t .serif{font-size:clamp(1rem,2vw,1.5rem);margin-bottom:.9rem}
-.r-hero .r-cta .btn{padding:.8rem 1.4rem}
-@media (max-width:1023px){.r-hero .r-title img{width:min(420px,72vw)}}
+.r-hero .r-hero-t{position:absolute;inset:4.9rem 0 0 0;display:grid;place-items:center;padding:.8rem 1rem;background:none;pointer-events:none}
+.r-card{pointer-events:auto;text-align:center;background:rgba(246,241,232,.9);padding:clamp(.8rem,1.8vw,1.5rem) clamp(1.2rem,3vw,2.6rem);box-shadow:0 14px 40px -18px rgba(40,30,20,.5)}
+.r-card .kicker{font-size:clamp(.55rem,1vw,.72rem);margin:0}
+.r-card .r-title{margin:.3rem 0 .4rem}
+.r-card .r-title img{width:min(420px,34vw);min-width:190px;height:auto;margin-inline:auto}
+.r-card .serif{font-size:clamp(.95rem,1.7vw,1.3rem);margin-bottom:.8rem}
+.r-card .r-cta .btn{padding:.75rem 1.3rem}
+@media (max-width:1023px){.r-card .r-title img{width:min(360px,64vw)}}
