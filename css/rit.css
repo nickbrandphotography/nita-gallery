@@ -105,14 +105,14 @@
 .r-art img{display:block;width:100%;height:auto}
 .r-hero .r-hero-t{padding:clamp(2rem,5vw,3.5rem) 1.5rem clamp(3rem,6vw,5rem);background:var(--bg)}
 .r-hero .r-title img{margin-inline:auto}
-@media (max-width:1023px){.r-art img{aspect-ratio:4/5;object-fit:cover}}
 
-/* hero: the writing sits on the banner, on a soft light veil so it stays easy to read */
-.r-hero{position:relative}
-.r-art{height:clamp(500px,54vw,720px)}
-.r-art img{height:100%;object-fit:cover}
-.r-hero .r-hero-t{position:absolute;inset:4.9rem 0 0 0;display:grid;place-content:center;justify-items:center;padding:1.5rem;background:radial-gradient(ellipse 62% 70% at 50% 50%,rgba(247,242,233,.9) 0,rgba(247,242,233,.62) 45%,rgba(247,242,233,0) 78%)}
-.r-hero .r-title{margin:.2rem 0 1rem}
-.r-hero .r-title img{width:min(600px,78vw);height:auto}
-.r-hero .r-hero-t .serif{margin-bottom:1.4rem}
-@media (max-width:1023px){.r-art{height:clamp(560px,120vw,720px)}.r-art img{aspect-ratio:auto}}
+/* hero: the writing sits on the banner (painting shown whole, not cropped), on a soft light veil so it stays easy to read */
+.r-art{height:auto}
+.r-art img{height:auto;object-fit:fill;aspect-ratio:auto}
+.r-hero .r-hero-t{position:absolute;inset:4.9rem 0 0 0;display:grid;place-content:center;justify-items:center;padding:.5rem 1rem;background:radial-gradient(ellipse 58% 72% at 50% 50%,rgba(247,242,233,.9) 0,rgba(247,242,233,.62) 45%,rgba(247,242,233,0) 80%)}
+.r-hero .r-hero-t .kicker{font-size:clamp(.55rem,1.1vw,.75rem)}
+.r-hero .r-title{margin:.1rem 0 .5rem}
+.r-hero .r-title img{width:min(520px,40vw);min-width:200px;height:auto}
+.r-hero .r-hero-t .serif{font-size:clamp(1rem,2vw,1.5rem);margin-bottom:.9rem}
+.r-hero .r-cta .btn{padding:.8rem 1.4rem}
+@media (max-width:1023px){.r-hero .r-title img{width:min(420px,72vw)}}
