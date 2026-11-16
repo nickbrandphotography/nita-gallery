@@ -3,6 +3,9 @@ const { $, $$, esc, mail, openModal, reduce, fine, data } = window.NITA;
 
 /* order: Collection I (Bodyscapes) then Collection II (Abstract Forms) */
 const bod = [...data.bod.filter(b => b.series === 'Bodyscapes'), ...data.bod.filter(b => b.series !== 'Bodyscapes')];
+/* Sand Dunes of the Sole leads the list */
+const lead = bod.findIndex(b => b.title === 'Sand Dunes of the Sole');
+if (lead > 0) bod.unshift(...bod.splice(lead, 1));
 const seriesName = s => s === 'Bodyscapes' ? 'Fifty Pages of Shades' : s;
 const pad = n => String(n).padStart(2, '0');
 const bid = b => 'bs-' + b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
