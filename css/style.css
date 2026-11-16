@@ -353,3 +353,13 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .fr{border:0 solid transparent;border-image-source:url(../img/brand/frame-oak.png);border-image-slice:56;border-image-repeat:stretch}
 .cv.fr{border-width:0;border-image-source:url(../img/brand/frame-oak.png);border-image-slice:56;border-image-repeat:stretch;background:#58585a}
 .fr-ov{position:absolute;pointer-events:none;z-index:3;display:none;box-sizing:border-box}
+
+/* footer "Follow": all six businesses in one row on wider screens */
+@media (min-width:900px){
+  .social{max-width:min(1240px,100% - 3rem);margin-bottom:1.6rem}
+  .social ul{flex-wrap:nowrap;justify-content:space-between;align-items:flex-start;gap:1rem}
+  .social li{flex:1 1 0;min-width:0;text-align:center;font-size:.68rem}
+  .social b{font-size:.64rem;letter-spacing:.14em}
+  .social a{overflow-wrap:break-word}
+}
+@media (min-width:1300px){.social li{font-size:.8rem}.social b{font-size:.7rem}}
