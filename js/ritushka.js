@@ -28,8 +28,8 @@ const ctx = i => ({ n: view.length, i, get() {
     <p>${esc(a.text)}</p>
     ${a.sold ? `<p class="pr" style="color:var(--mute)">Sold</p><p class="small">A related commission can be created in a comparable size and palette.</p>
       <a class="btn" href="${mail('ritushka', 'Commission enquiry — similar to ' + a.title)}"><span>Ask about a commission</span></a>${printLine}`
-    : `<p class="pr">${a.price ? a.price.replace('A$', 'AUD $') + ' <small class="small">framed</small>' : 'Price on enquiry'}</p>
-      <p class="small">Original, hand-painted, signed, with certificate of authenticity. Floating oak frame. Insured shipping worldwide.</p>
+    : `<p class="pr">${a.price ? a.price.replace('A$', 'AUD $') + ' <small class="small">' + (a.framed ? 'framed' : 'unframed') + '</small>' : 'Price on enquiry'}</p>
+      <p class="small">Original, hand-painted, signed, with certificate of authenticity. ${a.framed ? 'Floating oak frame. ' : 'Unframed; custom framing available. '}Insured shipping worldwide.</p>
       <p data-item="rit-${a.id.slice(4)}" class="${a.price ? 'priced' : 'unpriced'}"><button class="add" type="button" data-add="rit-${a.id.slice(4)}">Add to cart</button>
       <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>${printLine}`}` };
 } });

@@ -7,7 +7,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Approaching Destination",
-   "price": 3850,
+   "price": 1950,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
@@ -22,7 +22,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Aqua Frost — Thinking of You",
-   "price": 2800,
+   "price": 1950,
    "sold": false,
    "ship": "art",
    "size": "120 × 91 cm",
@@ -37,14 +37,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Blue Mountains",
-   "price": 1950,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/blue-mountains.jpg?v=2",
    "thumb": "img/rit/blue-mountains.jpg?v=2",
    "alt": "Blue Mountains, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -52,7 +52,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Bush",
-   "price": 3550,
+   "price": 2250,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
@@ -74,7 +74,7 @@
    "img": "img/rit/hi/coastal-waters.jpg?v=2",
    "thumb": "img/rit/coastal-waters.jpg?v=2",
    "alt": "Coastal Waters, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -82,7 +82,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Deliciousness",
-   "price": 3850,
+   "price": 1950,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
@@ -97,7 +97,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Desire",
-   "price": 3850,
+   "price": 1950,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
@@ -119,7 +119,7 @@
    "img": "img/rit/hi/eruption.jpg?v=2",
    "thumb": "img/rit/eruption.jpg?v=2",
    "alt": "Eruption, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 122 × 91 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 122 × 91 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -134,7 +134,7 @@
    "img": "img/rit/hi/go-with-the-flow.jpg?v=2",
    "thumb": "img/rit/go-with-the-flow.jpg?v=2",
    "alt": "Go With the Flow, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 122 × 152 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 122 × 152 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -142,7 +142,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Horizon",
-   "price": 4850,
+   "price": 2200,
    "sold": false,
    "ship": "art",
    "size": "79 × 138 cm",
@@ -164,7 +164,7 @@
    "img": "img/rit/hi/into-the-ever-blue.jpg?v=2",
    "thumb": "img/rit/into-the-ever-blue.jpg?v=2",
    "alt": "Into the Ever Blue, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -172,14 +172,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Just Add Champagne",
-   "price": 2500,
+   "price": 1000,
    "sold": false,
    "ship": "art",
    "size": "90 × 90 cm",
    "img": "img/rit/hi/just-add-champagne.jpg?v=2",
    "thumb": "img/rit/just-add-champagne.jpg?v=2",
    "alt": "Just Add Champagne, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 90 × 90 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 90 × 90 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -194,7 +194,7 @@
    "img": "img/rit/hi/life-chooses-you.jpg?v=2",
    "thumb": "img/rit/life-chooses-you.jpg?v=2",
    "alt": "Life Chooses You, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 90 × 90 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 90 × 90 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -202,14 +202,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Marshmallow",
-   "price": 1950,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/marshmallow.jpg?v=2",
    "thumb": "img/rit/marshmallow.jpg?v=2",
    "alt": "Marshmallow, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -224,7 +224,7 @@
    "img": "img/rit/hi/numero-uno.jpg?v=2",
    "thumb": "img/rit/numero-uno.jpg?v=2",
    "alt": "Numero Uno, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 50 × 40 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 50 × 40 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -247,7 +247,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Paragliding",
-   "price": 5250,
+   "price": 2850,
    "sold": false,
    "ship": "art",
    "size": "150 × 100 cm",
@@ -262,7 +262,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Peony — Thinking of Me",
-   "price": 2800,
+   "price": 1950,
    "sold": false,
    "ship": "art",
    "size": "120 × 91 cm",
@@ -277,14 +277,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Peace of White Heaven",
-   "price": 1950,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/peace-of-white-heaven.jpg?v=2",
    "thumb": "img/rit/peace-of-white-heaven.jpg?v=2",
    "alt": "Peace of White Heaven, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -292,7 +292,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Plateau",
-   "price": 5250,
+   "price": 2950,
    "sold": false,
    "ship": "art",
    "size": "100 × 150 cm",
@@ -314,7 +314,7 @@
    "img": "img/rit/hi/reflection.jpg?v=2",
    "thumb": "img/rit/reflection.jpg?v=2",
    "alt": "Reflection, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 76 × 76 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 76 × 76 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -322,14 +322,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "River of My Thoughts",
-   "price": 3850,
+   "price": 1500,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
    "img": "img/rit/hi/river-of-my-thoughts.jpg?v=2",
    "thumb": "img/rit/river-of-my-thoughts.jpg?v=2",
    "alt": "River of My Thoughts, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 91 × 122 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 91 × 122 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -344,7 +344,7 @@
    "img": "img/rit/hi/rushing-shallows.jpg?v=2",
    "thumb": "img/rit/rushing-shallows.jpg?v=2",
    "alt": "Rushing Shallows, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -352,14 +352,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Set Sail",
-   "price": 1500,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/set-sail.jpg?v=2",
    "thumb": "img/rit/set-sail.jpg?v=2",
    "alt": "Set Sail, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -367,7 +367,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Shoreham",
-   "price": 2950,
+   "price": 1500,
    "sold": false,
    "ship": "art",
    "size": "90 × 90 cm",
@@ -382,14 +382,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Soft Awakening",
-   "price": 2500,
+   "price": 1000,
    "sold": false,
    "ship": "art",
    "size": "90 × 90 cm",
    "img": "img/rit/hi/soft-awakening.jpg?v=2",
    "thumb": "img/rit/soft-awakening.jpg?v=2",
    "alt": "Soft Awakening, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 90 × 90 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 90 × 90 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -397,14 +397,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Softly Loving Dreamscape",
-   "price": 4950,
+   "price": 2950,
    "sold": false,
    "ship": "art",
    "size": "152 × 91 cm",
    "img": "img/rit/hi/softly-loving-dreamscape.jpg?v=2",
    "thumb": "img/rit/softly-loving-dreamscape.jpg?v=2",
    "alt": "Softly Loving Dreamscape, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 152 × 91 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 152 × 91 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -419,7 +419,7 @@
    "img": "img/rit/hi/stillness.jpg?v=2",
    "thumb": "img/rit/stillness.jpg?v=2",
    "alt": "Stillness, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 72 × 72 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 72 × 72 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -434,7 +434,7 @@
    "img": "img/rit/hi/strangely-attracted-to-you.jpg?v=2",
    "thumb": "img/rit/strangely-attracted-to-you.jpg?v=2",
    "alt": "Strangely Attracted to You, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 100 × 120 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 100 × 120 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -442,14 +442,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Sunrise Over Tokyo",
-   "price": 2450,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/sunrise-over-tokyo.jpg?v=2",
    "thumb": "img/rit/sunrise-over-tokyo.jpg?v=2",
    "alt": "Sunrise Over Tokyo, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -457,7 +457,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "The Apostles",
-   "price": 4850,
+   "price": 2500,
    "sold": false,
    "ship": "art",
    "size": "91 × 122 cm",
@@ -479,7 +479,7 @@
    "img": "img/rit/hi/the-world-in-my-eyes.jpg?v=2",
    "thumb": "img/rit/the-world-in-my-eyes.jpg?v=2",
    "alt": "The World In My Eyes, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 90 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 90 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -494,7 +494,7 @@
    "img": "img/rit/hi/the-world-in-my-eyes-ii.jpg?v=2",
    "thumb": "img/rit/the-world-in-my-eyes-ii.jpg?v=2",
    "alt": "The World In My Eyes II, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 90 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 90 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -509,7 +509,7 @@
    "img": "img/rit/hi/tree-of-our-lives.jpg?v=2",
    "thumb": "img/rit/tree-of-our-lives.jpg?v=2",
    "alt": "Tree of Our Lives, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 120 × 180 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 120 × 180 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -517,14 +517,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Turbulence",
-   "price": 1450,
+   "price": 950,
    "sold": false,
    "ship": "art",
    "size": "60 × 60 cm",
    "img": "img/rit/hi/turbulence.jpg?v=2",
    "thumb": "img/rit/turbulence.jpg?v=2",
    "alt": "Turbulence, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 60 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 60 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -532,7 +532,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Turquoise Tuesday",
-   "price": 2950,
+   "price": 1500,
    "sold": false,
    "ship": "art",
    "size": "90 × 90 cm",
@@ -547,14 +547,14 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Urban Jungle",
-   "price": 2950,
+   "price": 1450,
    "sold": false,
    "ship": "art",
    "size": "110 × 76 cm",
    "img": "img/rit/hi/urban-jungle.jpg?v=2",
    "thumb": "img/rit/urban-jungle.jpg?v=2",
    "alt": "Urban Jungle, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 110 × 76 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 110 × 76 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
@@ -562,7 +562,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Without Sweet Harmony",
-   "price": 2150,
+   "price": 1400,
    "sold": false,
    "ship": "art",
    "size": "91 × 61 cm",
@@ -577,7 +577,7 @@
    "brand": "ritushka",
    "type": "Paintings",
    "name": "Without Sweet Harmony II",
-   "price": 2150,
+   "price": 1400,
    "sold": false,
    "ship": "art",
    "size": "91 × 61 cm",
@@ -599,7 +599,7 @@
    "img": "img/rit/hi/behind-the-scenes.jpg?v=2",
    "thumb": "img/rit/behind-the-scenes.jpg?v=2",
    "alt": "Behind the Scenes, acrylic on canvas by Ritushka",
-   "desc": "Original acrylic on canvas, 60 × 150 cm, with a floating oak frame. Signed, with a certificate of authenticity.",
+   "desc": "Original acrylic on canvas, 60 × 150 cm, unframed. Signed, with a certificate of authenticity.",
    "max": 1
   },
   {
