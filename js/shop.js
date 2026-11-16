@@ -39,6 +39,7 @@ let modalIdx = -1;
 
 const BRAND = { 'second-skin': 'Second Skin', 'nikki-b': 'Nikki B', 'ritushka': 'Ritushka', 'nick-brand': 'Fifty Pages of Shades' };
 const MAIL = { 'second-skin': 'gallery', 'nikki-b': 'nikki', 'ritushka': 'ritushka', 'nick-brand': 'nick' };
+const LOGO = { 'second-skin': 'img/ss/logo-t-lift-s.png', 'nikki-b': 'img/brand/nikki-logo-t-white.png' };
 const ctx = i => ({ n: list.length, i, get() {
   const c = list[this.i], id = c.dataset.item, it = (window.BAG && window.BAG.item(id)) || null;
   modalIdx = this.i;
@@ -59,7 +60,7 @@ const ctx = i => ({ n: list.length, i, get() {
       <p class="small">Made to order in Sydney and shipped unframed, rolled in a tube or flat in a rigid mailer. About 10–15 business days in Australia, up to 4 weeks internationally.</p>` : '';
   return { imgs, alt: it ? it.alt : name, html: `
     <div data-item="${esc(id)}" class="${ok ? 'priced' : 'unpriced'}">
-      <p class="meta">${BRAND[brand]}${isPrint ? ' · Limited edition print' : type && type !== BRAND[brand] ? ' · ' + esc(type) : ''}</p><h3>${esc(name)}</h3>
+      ${LOGO[brand] ? `<img class="m-logo" src="${LOGO[brand]}" alt="${BRAND[brand]}">` : ''}<p class="meta">${BRAND[brand]}${isPrint ? ' · Limited edition print' : type && type !== BRAND[brand] ? ' · ' + esc(type) : ''}</p><h3>${esc(name)}</h3>
       ${desc}${story}${frame}${sizes}
       <p class="pr">${pr}${ok && art && !isPrint ? ' <small class="small">framed</small>' : ''}</p>
       <p><button class="add" type="button" data-add="${esc(id)}">Add to cart</button>

@@ -60,3 +60,5 @@
 .j-gal img{width:100%;height:auto;transition:transform 1.4s var(--ease)}
 .j-gal button:hover img{transform:scale(1.05)}
 
+/* brand logos */
+.j-mark{display:block;height:clamp(3.2rem,6vw,4.6rem);width:auto;margin:0 auto 1.4rem}

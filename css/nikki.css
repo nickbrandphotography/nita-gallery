@@ -98,3 +98,6 @@
   .k-ctl{justify-items:start}
   .k-facts ul{grid-template-columns:1fr 1fr}
 }
+
+/* brand logos */
+.k-endlogo{display:block;height:clamp(4rem,9vw,6.5rem);width:auto;margin:0 auto 1.2rem}

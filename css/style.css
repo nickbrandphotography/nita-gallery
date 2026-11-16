@@ -363,3 +363,8 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
   .social a{overflow-wrap:break-word}
 }
 @media (min-width:1300px){.social li{font-size:.8rem}.social b{font-size:.7rem}}
+
+/* brand logos */
+.m-logo{display:block;height:2.6rem;width:auto;margin:0 0 .9rem}
+.room .room-t h3.sig img,.room:hover .room-t h3.sig img{filter:drop-shadow(0 1px 5px rgba(0,0,0,.65))}
+.room .room-t h3.sig img[alt="Nikki B"],.room:hover .room-t h3.sig img[alt="Nikki B"]{height:clamp(4.2rem,8vw,6.2rem)}
