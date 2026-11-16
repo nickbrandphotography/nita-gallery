@@ -46,7 +46,7 @@ burger.onclick = () => { const o = links.classList.toggle('open'); burger.setAtt
 
 /* ---- page-change curtain ---- */
 const cur = $('#curtain'), loader = $('#loader');
-const THEME = { 'ritushka': '#ff7a1a', 'nick-brand': '#000000', 'nikki-b': '#f0307f', 'jewellery': '#d9a21a', 'index': '#252525' };
+const THEME = { 'ritushka': '#000000', 'nick-brand': '#000000', 'nikki-b': '#f0307f', 'jewellery': '#d9a21a', 'index': '#252525' };
 function reveal() {
   if (!cur) return;
   setTimeout(() => {
