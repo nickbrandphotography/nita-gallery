@@ -97,3 +97,12 @@
 
 /* hero title is Ritushka's signature */
 .r-title img{display:block;width:min(760px,90vw);height:auto;margin:.4rem 0 1rem}
+
+/* hero: wide painting banner (the same one as ritushka.com), with her signature underneath */
+.r-hero{min-height:0;display:block;padding:4.9rem 0 0}
+.r-hero::before{display:none}
+.r-art{margin:0;line-height:0}
+.r-art img{display:block;width:100%;height:auto}
+.r-hero .r-hero-t{padding:clamp(2rem,5vw,3.5rem) 1.5rem clamp(3rem,6vw,5rem);background:var(--bg)}
+.r-hero .r-title img{margin-inline:auto}
+@media (max-width:1023px){.r-art img{aspect-ratio:4/5;object-fit:cover}}

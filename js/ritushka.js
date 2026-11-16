@@ -2,19 +2,6 @@
 const { $, $$, esc, mail, openModal, reduce, fine, data } = window.NITA;
 const rit = data.rit;
 
-/* hero: canvases drift with the mouse and the scroll */
-(() => {
-  const cvs = $$('.cv');
-  if (!fine || reduce) return;
-  let tx = 0, ty = 0, cx = 0, cy = 0;
-  addEventListener('mousemove', e => { tx = e.clientX / innerWidth - .5; ty = e.clientY / innerHeight - .5; });
-  (function loop() {
-    cx += (tx - cx) * .06; cy += (ty - cy) * .06;
-    if (scrollY < innerHeight * 1.2) cvs.forEach(f => { const d = +f.dataset.depth; f.style.transform = `translate3d(${cx * -60 * d}px,${cy * -60 * d - scrollY * .05 * d}px,0)`; });
-    requestAnimationFrame(loop);
-  })();
-})();
-
 /* the wall */
 const wall = $('#rWall'); let col = 'all', st = 'avail', view = [];
 function render() {
