@@ -368,3 +368,6 @@ address a{font:400 .78rem var(--display);letter-spacing:.2em;text-transform:uppe
 .m-logo{display:block;height:2.6rem;width:auto;margin:0 0 .9rem}
 .room .room-t h3.sig img,.room:hover .room-t h3.sig img{filter:drop-shadow(0 1px 5px rgba(0,0,0,.65))}
 .room .room-t h3.sig img[alt="Nikki B"],.room:hover .room-t h3.sig img[alt="Nikki B"]{height:clamp(4.2rem,8vw,6.2rem)}
+
+/* the names ribbon on the home page keeps scrolling even when the device asks for reduced motion */
+@media (prefers-reduced-motion:reduce){.mq-track{animation:mq 40s linear infinite!important}}
