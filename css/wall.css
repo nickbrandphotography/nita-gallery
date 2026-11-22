@@ -1,0 +1,52 @@
+/* VIEW ON YOUR WALL: the wall viewer page (js/wall.js) */
+.wv{padding:0 0 clamp(3rem,7vw,6rem)}
+.wv-start{display:grid;gap:3rem;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.wv-start{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.wv-h{font:200 clamp(1.8rem,3.4vw,2.6rem)/1.1 var(--display);letter-spacing:-.01em;margin:0 0 1rem}
+.wv-p{color:#d6d0c6;max-width:34rem;margin-bottom:1.6rem}
+.wv-samples{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.wv-samples button{text-align:left;cursor:pointer}
+.wv-samples img{display:block;width:100%;border-radius:6px;border:1px solid rgba(255,255,255,.2);transition:border-color .3s}
+.wv-samples button:hover img{border-color:#fff}
+.wv-samples span{display:block;margin-top:.5rem;font:400 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+
+.wv-cols{display:grid;gap:2.5rem;grid-template-columns:minmax(0,1fr)}
+@media (min-width:1000px){.wv-cols{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
+.wv-stagewrap{width:100%;min-width:0}
+.wv-stage{position:relative;margin:0 auto;overflow:hidden;border-radius:6px;user-select:none;-webkit-user-select:none}
+.wv-room{display:block;width:100%;height:100%}
+.wv-line{position:absolute;inset:0;pointer-events:none}
+.wv-handle{position:absolute;width:44px;height:44px;transform:translate(-50%,-50%);display:grid;place-items:center;cursor:grab;touch-action:none}
+.wv-handle span{width:20px;height:20px;border-radius:50%;background:#111;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+.wv-tag{position:absolute;transform:translate(-50%,-50%);background:#111;color:#fff;font:400 .75rem var(--display);padding:.3rem .5rem;border-radius:4px;pointer-events:none}
+.wv-piece{position:absolute;cursor:grab}
+.wv-piece:active{cursor:grabbing}
+.wv-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(245,241,234,.88);color:#1b1b1b;font-size:1.4rem;line-height:1;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer}
+.wv-arrow.prev{left:.6rem}.wv-arrow.next{right:.6rem}
+.wv-hint{text-align:center;font-size:.82rem;color:var(--mute);margin:.8rem 0 0}
+.wv-thumbs{display:flex;gap:.6rem;overflow-x:auto;padding:1rem 0 .4rem;scroll-snap-type:x mandatory}
+.wv-thumbs button{flex:none;scroll-snap-align:start;padding:2px;border:2px solid transparent;border-radius:4px;opacity:.65;transition:opacity .3s,border-color .3s;cursor:pointer}
+.wv-thumbs button.on{border-color:var(--ink);opacity:1}
+.wv-thumbs button:hover{opacity:1}
+.wv-thumbs img{display:block;height:64px;width:auto}
+
+.wv-modes{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
+.wv-pill{font:400 .7rem var(--display);letter-spacing:.16em;text-transform:uppercase;padding:.6rem 1rem;margin:0 .4rem .45rem 0;border:1px solid rgba(255,255,255,.3);border-radius:99px;transition:background .3s,color .3s,border-color .3s;cursor:pointer}
+.wv-modes .wv-pill{margin:0}
+.wv-pill:hover{border-color:#fff}
+.wv-pill.on{background:var(--ink);color:#1b1b1b;border-color:var(--ink)}
+.wv-pill:focus-visible,.wv-link:focus-visible,.wv-thumbs button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.wv-count{font:400 .7rem var(--display);letter-spacing:.3em;text-transform:uppercase;color:var(--mute);margin:0 0 .4rem}
+.wv-title{font:300 clamp(1.5rem,2.6vw,2.1rem)/1.15 var(--display);letter-spacing:.02em;margin:0 0 1.2rem}
+.wv-opt{margin:0 0 1.1rem}
+.wv-l{font:400 .66rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin:0 0 .55rem}
+.wv-buy{border-top:1px solid rgba(255,255,255,.16);padding-top:1.3rem;margin-top:.4rem}
+.wv-price{font:400 1.4rem var(--display);letter-spacing:.08em;color:#f0d68a;margin:0 0 .5rem}
+.wv-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;margin:1.2rem 0}
+.wv-link{font:400 .72rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.wv-tools{display:flex;gap:1.2rem;flex-wrap:wrap}
+.wv-tools .wv-link{color:var(--mute)}
+.wv-field{display:block;margin:0 0 1rem}
+.wv-field span{display:block;font:400 .66rem var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-bottom:.4rem}
+.wv-field select,.wv-field input{width:100%;max-width:24rem;font:300 .95rem var(--body);color:var(--ink);padding:.65rem .75rem;border:1px solid rgba(255,255,255,.3);border-radius:6px;background:#232221}
+.btn:disabled{opacity:.4;pointer-events:none}
