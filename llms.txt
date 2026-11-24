@@ -21,6 +21,14 @@
 - Second Skin jewellery: price shown on each piece in the shop
 - Online shop: Second Skin jewellery and Nikki B scarves and sarongs, delivered worldwide (delivery priced by country), paid securely in AUD through Stripe
 
+## Venue hire
+- NITA Gallery can be hired exclusively for private events, Christmas parties, launches, workshops, meetings and photo shoots
+- Close to 80 square metres, up to 40 guests standing. Wheelchair-accessible toilet. Catering can be arranged (quoted per head)
+- Rates (AUD): daytime $120/hour (2 hour minimum); Monday-Thursday evening $160/hour (3 hours); Friday or Saturday evening $200/hour (4 hours); Sunday events $160/hour (3 hours)
+- Packages: 4-hour evening $750 Monday-Thursday or $950 Friday-Saturday; full day $1,100 weekdays or $1,400 weekends. 1-20 December, Thursday-Saturday evenings are 20% more
+- The artists can host and give a short talk about the work; guests get a discount on art bought during the event
+- Details and enquiries: https://www.nitagallery.com.au/venue-hire
+
 ## Exhibitions
 <!-- EXHIBITIONS -->
 - [Exhibitions: current, upcoming and past](https://www.nitagallery.com.au/exhibitions)
@@ -34,6 +42,7 @@
 - [Second Skin jewellery](https://www.nitagallery.com.au/jewellery)
 - [Shop: jewellery and scarves](https://www.nitagallery.com.au/shop)
 - [Photo studio: book a portrait session in Surry Hills](https://www.nitagallery.com.au/photo-studio)
+- [Venue hire: hire the gallery for events in Surry Hills](https://www.nitagallery.com.au/venue-hire)
 - [Commissioned paintings by Ritushka](https://www.nitagallery.com.au/commissions)
 - [Visit NITA Gallery: opening hours, getting there, parking and nearby galleries](https://www.nitagallery.com.au/visit)
 - [Frequently asked questions](https://www.nitagallery.com.au/#faq)

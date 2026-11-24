@@ -17,3 +17,13 @@
 .v-see span,.v-near span{color:#a9a399;font-size:.9em}
 .v-near p{color:#d6d0c6;font-size:.95em;margin:.2rem 0 0}
 @media (max-width:800px){.v-grid{grid-template-columns:1fr}.v-dl{grid-template-columns:1fr;gap:.2rem}.v-dl dd{margin-bottom:.8rem}}
+/* Venue hire rates */
+.vh-scroll{overflow-x:auto;max-width:52rem}
+.vh-rates{border-collapse:collapse;width:100%;min-width:34rem}
+.vh-rates th,.vh-rates td{text-align:left;vertical-align:top;padding:.9rem 1rem .9rem 0;border-bottom:1px solid #3f3f3f;font-weight:300;color:#e8e2d8}
+.vh-rates thead th{font:600 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;color:#a9a399;padding-bottom:.6rem}
+.vh-rates tbody th{font-weight:400;color:#f5f1ea}
+.vh-rates tbody th span{display:block;color:#a9a399;font-size:.88em;font-weight:300;margin-top:.2rem}
+.vh-rates td:nth-child(2){white-space:nowrap}
+.vh-extras{margin-top:2rem}
+@media (max-width:640px){.vh-rates{min-width:0}.vh-rates thead{display:none}.vh-rates tr{display:grid;grid-template-columns:auto 1fr;gap:.3rem 1.2rem;padding:.9rem 0;border-bottom:1px solid #3f3f3f}.vh-rates th,.vh-rates td{border:0;padding:0}.vh-rates tbody th{grid-column:1/-1}.vh-rates td:last-child{color:#a9a399}.vh-rates td:last-child::before{content:"Min. "}.vh-rates td.nomin::before{content:none}}
