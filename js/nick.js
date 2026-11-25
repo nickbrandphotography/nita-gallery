@@ -48,7 +48,8 @@ const ctx = i => ({ n: bod.length, i, get() {
     <p class="small">The price depends on the size of print and the frame (black, natural oak or white). Inquire and the studio will reply with a quote.</p>
     <div data-item="${bid(b)}" class="unpriced"><p class="pr">Inquire</p>
     <p><button class="add" type="button" data-add="${bid(b)}">Add to cart</button>
-    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Inquire about this edition</span></a></p></div>` };
+    <a class="btn" href="${mail('nick', 'Enquiry — ' + b.title)}"><span>Inquire about this edition</span></a></p>
+    <p><a class="wall-link" href="/view-on-your-wall?item=${bid(b)}">See it on your wall</a></p></div>` };
 } });
 
 /* sizes drawn to scale against a 175 cm figure (1 cm = 1.5 units) */

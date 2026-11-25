@@ -31,7 +31,8 @@ const ctx = i => ({ n: view.length, i, get() {
     : `<p class="pr">${a.price ? a.price.replace('A$', 'AUD $') + ' <small class="small">' + (a.framed ? 'framed' : 'unframed') + '</small>' : 'Price on enquiry'}</p>
       <p class="small">Original, hand-painted, signed, with certificate of authenticity. ${a.framed ? 'Floating oak frame. ' : 'Unframed; custom framing available. '}Insured shipping worldwide.</p>
       <p data-item="rit-${a.id.slice(4)}" class="${a.price ? 'priced' : 'unpriced'}"><button class="add" type="button" data-add="rit-${a.id.slice(4)}">Add to cart</button>
-      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>${printLine}`}` };
+      <a class="btn" href="${mail('ritushka', 'Enquiry — ' + a.title + ' (' + a.id + ')')}"><span>Enquire about this work</span></a></p>
+      <p><a class="wall-link" href="/view-on-your-wall?item=rit-${a.id.slice(4)}">See it on your wall</a></p>${printLine}`}` };
 } });
 wall.addEventListener('click', e => { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); });
 wall.addEventListener('keydown', e => { if (e.key === 'Enter') { const f = e.target.closest('.rw'); if (f) openModal(ctx(+f.dataset.i)); } });

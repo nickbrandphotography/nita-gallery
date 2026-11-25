@@ -64,7 +64,7 @@ const ctx = i => ({ n: list.length, i, get() {
       ${desc}${story}${frame}${sizes}
       <p class="pr">${pr}${ok && art && !isPrint ? ' <small class="small">framed</small>' : ''}</p>
       <p><button class="add" type="button" data-add="${esc(id)}">Add to cart</button>
-      <a class="ask" href="mailto:${window.NITA.EMAIL[MAIL[brand]]}?subject=${subj}">Ask about this piece</a>${art ? `<a class="ask" href="/view-on-your-wall?item=${encodeURIComponent(id)}">See it on your wall</a>` : ''}</p>
+      <a class="ask" href="mailto:${window.NITA.EMAIL[MAIL[brand]]}?subject=${subj}">Ask about this piece</a>${art ? `<a class="wall-link" href="/view-on-your-wall?item=${encodeURIComponent(id)}">See it on your wall</a>` : ''}</p>
       <p class="small">Prices in Australian dollars. Delivery worldwide, priced by country in your cart.</p>
     </div>` };
 } });

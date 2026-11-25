@@ -56,8 +56,9 @@ html.bag-open{overflow:hidden}
 .add{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:600 .72rem var(--display);letter-spacing:.2em;text-transform:uppercase;padding:.8rem 1.3rem;border-radius:99px;border:1px solid currentColor;position:relative;overflow:hidden;isolation:isolate;transition:color .4s,border-color .4s}
 .add::before{content:"";position:absolute;inset:0;background:var(--grad);transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
 .add:hover{border-color:transparent;color:#fff}.add:hover::before{transform:none}
-.ask{line-height:1.7;font:400 .72rem/1.7 var(--display);letter-spacing:.2em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;color:inherit;opacity:.8}
-.ask:hover{opacity:1}
+.ask,.wall-link{line-height:1.7;font:400 .72rem/1.7 var(--display);letter-spacing:.2em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;color:inherit;opacity:.8}
+.ask:hover,.wall-link:hover{opacity:1}
+.modal .wall-link{display:inline-block;margin-top:1rem}
 .priced .ask,.unpriced .add{display:none}
 [data-item]:not(.priced):not(.unpriced) .add{opacity:.6}
 
